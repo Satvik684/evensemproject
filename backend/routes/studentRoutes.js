@@ -1,44 +1,157 @@
 const express = require("express");
 const Fuse = require("fuse.js");
-const { student, scraped } = require("../models/studentModel");
+const {
+  student,
+  scraped,
+  scrapedusa,
+  scrapeduk,
+  scrapedaus
+} = require("../models/studentModel");
 
 const router = express.Router();
 
 router.post("/", async (req, res) => {
-  const {  course ,category} = req.body;
+  const { course, category, country } = req.body;
   let filteredDate = [];
   //filtering by date
-  try {
-    const currDate = new Date();
-    const scholarshipData = await scraped.find();
-    filteredDate = scholarshipData.filter((scholarship) => {
-      const deadline = parseDate(scholarship.deadline);
-      return deadline >= currDate;
-    }); 
+  let countryS = country.toLowerCase();
 
-    //now filter the filteredDate array by egligilbe degrees
-    let filteredDegree = [];
-    const fuseOptions = {
-      shouldSort: true,
-      keys: ["eligible_degrees"], // Search in the 'eligible_degrees' field
-      threshold: 0.5,
-      includeScore: true,
-    };
+  if (countryS === "india") {
+    try {
+      const currDate = new Date();
+      const scholarshipData = await scraped.find();
+      filteredDate = scholarshipData.filter((scholarship) => {
+        const deadline = parseDate(scholarship.deadline);
+        return deadline >= currDate;
+      });
 
-    const fuse = new Fuse(filteredDate, fuseOptions);
-    const results = fuse.search(course); // Use Fuse to search
-    results.forEach((obj)=>{
-      filteredDegree.push(obj.item);
-    })
+      //now filter the filteredDate array by egligilbe degrees
+      let filteredDegree = [];
+      const fuseOptions = {
+        shouldSort: true,
+        keys: ["eligible_degrees"], // Search in the 'eligible_degrees' field
+        threshold: 0.5,
+        includeScore: true,
+      };
 
-    res.json(filteredDegree);
+      const fuse = new Fuse(filteredDate, fuseOptions);
+      const results = fuse.search(course); // Use Fuse to search
+      results.forEach((obj) => {
+        filteredDegree.push(obj.item);
+      });
 
+      res.json(filteredDegree);
+    } catch (error) {
+      console.log("error in filtering!");
+      res
+        .status(500)
+        .json({
+          error: "Failed to filter scholarships",
+          details: error.message,
+        });
+    }
+  } else if (countryS === "usa") {
+    try {
+      const currDate = new Date();
+      const scholarshipData = await scrapedusa.find();
+      filteredDate = scholarshipData.filter((scholarship) => {
+        const deadline = parseDate(scholarship.deadline);
+        return deadline >= currDate;
+      });
 
-  } catch (error) {
-    console.log("error in filtering!");
-    res
-      .status(500)
-      .json({ error: "Failed to filter scholarships", details: error.message });
+      //now filter the filteredDate array by egligilbe degrees
+      let filteredDegree = [];
+      const fuseOptions = {
+        shouldSort: true,
+        keys: ["eligibility_degree"], // Search in the 'eligible_degrees' field
+        threshold: 0.5,
+        includeScore: true,
+      };
+
+      const fuse = new Fuse(filteredDate, fuseOptions);
+      const results = fuse.search(course); // Use Fuse to search
+      results.forEach((obj) => {
+        filteredDegree.push(obj.item);
+      });
+
+      res.json(filteredDegree);
+    } catch (error) {
+      console.log("error in filtering!");
+      res
+        .status(500)
+        .json({
+          error: "Failed to filter scholarships",
+          details: error.message,
+        });
+    }
+  } else if (countryS === "uk") {
+    try {
+      const currDate = new Date();
+      const scholarshipData = await scrapeduk.find();
+      filteredDate = scholarshipData.filter((scholarship) => {
+        const deadline = parseDate(scholarship.deadline);
+        return deadline >= currDate;
+      });
+
+      //now filter the filteredDate array by egligilbe degrees
+      let filteredDegree = [];
+      const fuseOptions = {
+        shouldSort: true,
+        keys: ["eligibility_degree"], // Search in the 'eligible_degrees' field
+        threshold: 0.5,
+        includeScore: true,
+      };
+
+      const fuse = new Fuse(filteredDate, fuseOptions);
+      const results = fuse.search(course); // Use Fuse to search
+      results.forEach((obj) => {
+        filteredDegree.push(obj.item);
+      });
+
+      res.json(filteredDegree);
+    } catch (error) {
+      console.log("error in filtering!");
+      res
+        .status(500)
+        .json({
+          error: "Failed to filter scholarships",
+          details: error.message,
+        });
+    }
+  } else {
+    try {
+      const currDate = new Date();
+      const scholarshipData = await scrapedaus.find();
+      filteredDate = scholarshipData.filter((scholarship) => {
+        const deadline = parseDate(scholarship.deadline);
+        return deadline >= currDate;
+      });
+
+      //now filter the filteredDate array by egligilbe degrees
+      let filteredDegree = [];
+      const fuseOptions = {
+        shouldSort: true,
+        keys: ["eligibility_degree"], // Search in the 'eligible_degrees' field
+        threshold: 0.5,
+        includeScore: true,
+      };
+
+      const fuse = new Fuse(filteredDate, fuseOptions);
+      const results = fuse.search(course); // Use Fuse to search
+      results.forEach((obj) => {
+        filteredDegree.push(obj.item);
+      });
+
+      res.json(filteredDegree);
+    } catch (error) {
+      console.log("error in filtering!");
+      res
+        .status(500)
+        .json({
+          error: "Failed to filter scholarships",
+          details: error.message,
+        });
+    }
   }
 });
 
