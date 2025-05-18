@@ -1,5 +1,6 @@
+import React from "react"
 import Navbar from "./components/Navbar";
-import Midsec from "./assets/Midsec";
+import Midsec from "./components/Midsec";
 import Scholarship from "./components/Scholarship";
 
 
