@@ -1,17 +1,17 @@
-import React from 'react'
-import Navbar from './assets/Navbar'
-import Midsec from './assets/Midsec'
-import Scholarship from './assets/Scholarship'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Midsec from "./components/Midsec";
+import Scholarship from "./components/Scholarship";
 
 
 const App = () => {
   return (
     <>
-  <Navbar />
-  <Midsec />
-  <Scholarship />
-</>
-  )
-}
+      <Navbar />
+      <Midsec />
+      <Scholarship />
+    </>
+  );
+};
 
-export default App
+export default App;
