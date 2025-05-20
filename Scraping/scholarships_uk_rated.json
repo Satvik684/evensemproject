@@ -7,7 +7,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Universities in all the countries, except India",
         "link": "https://www.wemakescholars.com/scholarship/education-future-international-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/LycOT2xdEOJCepf_AJ8Tz4G-aQcl5QOF.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/LycOT2xdEOJCepf_AJ8Tz4G-aQcl5QOF.webp",
+        "sentiment_score": -0.0333,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Higher Education Scholarship Test For Indian Students HEST 2025",
@@ -17,7 +19,9 @@
         "deadline": "10 Jun, 2025",
         "location": "All the major study abroad destinations",
         "link": "https://www.wemakescholars.com/scholarship/higher-education-scholarship-test-for-indian-students-hest",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/_xXO3OPmDZt2-jx8kRSUoZI73lCHAfWS.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/_xXO3OPmDZt2-jx8kRSUoZI73lCHAfWS.webp",
+        "sentiment_score": 0.0708,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Mahatma Jyothiba Phule Overseas Vidya Nidhi For BC And EBC Students 2025",
@@ -27,7 +31,9 @@
         "deadline": "19 May, 2025",
         "location": "Universities of selected countries",
         "link": "https://www.wemakescholars.com/scholarship/mahatma-jyothiba-phule-overseas-vidya-nidhi-for-bc-and-ebc-students",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/593.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/593.webp",
+        "sentiment_score": 0.35,
+        "student_friendly_rating": 4
     },
     {
         "scholarship_name": "Colt Foundation PhD Fellowships In Occupational/Environmental Health 2025",
@@ -37,7 +43,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Universities of UK",
         "link": "https://www.wemakescholars.com/scholarship/colt-foundation-phd-fellowships-in-occupationalenvironmental-health",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/13649.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/13649.webp",
+        "sentiment_score": 0.175,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Dissertation Fieldwork Grant 2025",
@@ -47,7 +55,9 @@
         "deadline": "01 Nov, 2025",
         "location": "Any research institution around the world",
         "link": "https://www.wemakescholars.com/scholarship/dissertation-fieldwork-grants",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1703.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1703.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Marang Gomke Jaipal Singh Munda Overseas Scholarship 2025",
@@ -57,7 +67,9 @@
         "deadline": "06 Jun, 2025",
         "location": "Participating universities in the UK and Northern Ireland",
         "link": "https://www.wemakescholars.com/scholarship/marang-gomke-jaipal-singh-munda-overseas-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/iGu6ltxnR1dio1dMlFPYEukrw1NC6Znl.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/iGu6ltxnR1dio1dMlFPYEukrw1NC6Znl.webp",
+        "sentiment_score": 0.35,
+        "student_friendly_rating": 4
     },
     {
         "scholarship_name": "Boehringer Ingelheim Fonds (BIF) PhD Fellowships 2025",
@@ -67,7 +79,9 @@
         "deadline": "01 Jun, 2025",
         "location": "Research institutions in Europe (including Turkey, Israel)",
         "link": "https://www.wemakescholars.com/scholarship/boehringer-ingelheim-bif-fonds-phd-fellowships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/940.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/940.webp",
+        "sentiment_score": 0.0,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "DNP Foundation For Cultural Promotion Graphic Culture Research Grant 2025",
@@ -77,7 +91,9 @@
         "deadline": "16 Jun, 2025",
         "location": "Universities all around the world",
         "link": "https://www.wemakescholars.com/scholarship/dnp-foundation-for-cultural-promotion-graphic-culture-research-grant",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/r7Bq34WVLBTqOjL9du8HLxokym6DrLPN.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/r7Bq34WVLBTqOjL9du8HLxokym6DrLPN.webp",
+        "sentiment_score": -0.0179,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "PhD Studentships By Fight For Sight 2025",
@@ -87,7 +103,9 @@
         "deadline": "09 Jul, 2025",
         "location": "UK based Institutions",
         "link": "https://www.wemakescholars.com/scholarship/phd-studentships-fight-for-sight",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/96uJwadMzYESvob0NkXmEm5GaASfwZXq.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/96uJwadMzYESvob0NkXmEm5GaASfwZXq.webp",
+        "sentiment_score": 0.35,
+        "student_friendly_rating": 4
     },
     {
         "scholarship_name": "Helena Kennedy Foundation Bursary 202",
@@ -97,7 +115,9 @@
         "deadline": "08 May, 2025",
         "location": "UK colleges and universities",
         "link": "https://www.wemakescholars.com/scholarship/helena-kennedy-foundation-bursary",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/23dkNcAKOEOooQEYomETL6euK39XkXBc.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/23dkNcAKOEOooQEYomETL6euK39XkXBc.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Women In Finance Scholarship By Numerix 2025",
@@ -107,7 +127,9 @@
         "deadline": "10 Jun, 2025",
         "location": "At Accredited universities",
         "link": "https://www.wemakescholars.com/scholarship/women-in-finance-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/RAdtS8UReWXkVv9JImrN8NcW1AgM1DNU.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/RAdtS8UReWXkVv9JImrN8NcW1AgM1DNU.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Nutanix Advancing Women In Technology Scholarship Program 2025",
@@ -117,7 +139,9 @@
         "deadline": "31 May, 2025",
         "location": "Universities in the US, India, Netherlands, Serbia, Spain, UK, France, Australia, and Mexico",
         "link": "https://www.wemakescholars.com/scholarship/nutanix-heart-advancing-women-in-technology-scholarship-program",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/Nt_e6pVfMGRprk9HpGvmPP8aoCPUZage.jfif"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/Nt_e6pVfMGRprk9HpGvmPP8aoCPUZage.jfif",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Humane Studies Fellowship At George Mason University 2025",
@@ -127,7 +151,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Any university across the world (preference given to top research institutions)",
         "link": "https://www.wemakescholars.com/scholarship/humane-studies-fellowship-at-george-mason-university",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/D91mNPwtbR9UWzAh6yHhZy9sAO5Z4koF.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/D91mNPwtbR9UWzAh6yHhZy9sAO5Z4koF.webp",
+        "sentiment_score": 0.1083,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Cancer Research Institute Irvington Postdoctoral Fellowship 2025",
@@ -137,7 +163,9 @@
         "deadline": "01 Sep, 2025",
         "location": "Any non-profit institution across the world",
         "link": "https://www.wemakescholars.com/scholarship/cri-irvington-postdoctoral-fellowship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/XfMVFGLQibthORkQwuq2brXfnYM09JJo.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/XfMVFGLQibthORkQwuq2brXfnYM09JJo.webp",
+        "sentiment_score": 0.175,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Narotam Sekhsaria PG Scholarship 2025",
@@ -147,7 +175,9 @@
         "deadline": "23 Mar, 2025",
         "location": "Any prestigious Indian or International university",
         "link": "https://www.wemakescholars.com/scholarship/narotam-sekhsaria-pg-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1423.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1423.webp",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "QUEST Undergraduate Scholarship 2025",
@@ -157,7 +187,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Universities in the UK",
         "link": "https://www.wemakescholars.com/scholarship/quest-undergraduate-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/ERkZus-WYo_CyIabEFPOzG0qpQ3aHELr.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/ERkZus-WYo_CyIabEFPOzG0qpQ3aHELr.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Inlaks Shivdasani Scholarships 2025",
@@ -167,7 +199,9 @@
         "deadline": "31 Mar, 2025",
         "location": "US, European & UK institutions",
         "link": "https://www.wemakescholars.com/scholarship/inlaks-shivdasani-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/436.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/436.webp",
+        "sentiment_score": 0.175,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "K. C. Mahindra Scholarships For Post-Graduate Studies Abroad 2025",
@@ -177,7 +211,9 @@
         "deadline": "31 Mar, 2025",
         "location": "Reputable foreign Universities/Institutions around the World",
         "link": "https://www.wemakescholars.com/scholarship/k-c-mahindra-scholarships-for-postgraduate-studies-abroad",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/YpG13-QgwJt9mV8QdPXAVWz284IbjJXU.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/YpG13-QgwJt9mV8QdPXAVWz284IbjJXU.webp",
+        "sentiment_score": 0.0917,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Jeff Schell Fellowships 2025",
@@ -187,7 +223,9 @@
         "deadline": "11 Apr, 2025",
         "location": "Institutions in Germany (foreign applicants) and Abroad (German applicants)",
         "link": "https://www.wemakescholars.com/scholarship/jeff-schell-fellowships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/612.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/612.webp",
+        "sentiment_score": -0.075,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Research Grants By The Leakey Foundation 2025",
@@ -197,7 +235,9 @@
         "deadline": "15 Jul, 2025",
         "location": "Any university or research institution in the World",
         "link": "https://www.wemakescholars.com/scholarship/leakey-foundation-research-grants",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/Uv5sIcIKqO6iEh3EPeUqo7x_8yhSR9ez.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/Uv5sIcIKqO6iEh3EPeUqo7x_8yhSR9ez.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Alumni Scholarship At Heriot Watt University Dubai 2025",
@@ -207,7 +247,9 @@
         "deadline": "10 Jun, 2025",
         "location": "All Heriot-Watt campuses across the world (including Heriot Watt Online)",
         "link": "https://www.wemakescholars.com/scholarship/alumni-scholarship-at-heriot-watt-university-dubai",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/SYn4tPp2c-CC4bqKQucTaJ12aroP2plm.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/SYn4tPp2c-CC4bqKQucTaJ12aroP2plm.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Sir John Soane'S Museum Foundation Traveling Fellowship 2025",
@@ -217,7 +259,9 @@
         "deadline": "01 Mar, 2025",
         "location": "Sir John Soane's Museum, London, UK",
         "link": "https://www.wemakescholars.com/scholarship/sir-john-soane-s-museum-foundation-traveling-fellowship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/755.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/755.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "German Medical Students' Association - Professional Exchange/Research Exchange 2025",
@@ -227,7 +271,9 @@
         "deadline": "31 Mar, 2025",
         "location": "Host institution/university around the World",
         "link": "https://www.wemakescholars.com/scholarship/german-medical-students-association-professional-exchange-research-exchange",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1842.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1842.webp",
+        "sentiment_score": 0.1125,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Richard A. Freund International Scholarship 2025",
@@ -237,7 +283,9 @@
         "deadline": "01 Apr, 2025",
         "location": "Universities Abroad or in your home country",
         "link": "https://www.wemakescholars.com/scholarship/richard-a-freund-international-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/B3zKm0NRKdwooP4Wtv-FpXJP4KNAi5KM.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/B3zKm0NRKdwooP4Wtv-FpXJP4KNAi5KM.webp",
+        "sentiment_score": -0.025,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Educational Support Fund By Society For Underwater Technology 2025",
@@ -247,7 +295,9 @@
         "deadline": "30 Jun, 2025",
         "location": "Universities in the UK",
         "link": "https://www.wemakescholars.com/scholarship/educational-support-fund-by-society-for-underwater-technology",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2230.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2230.webp",
+        "sentiment_score": 0.075,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "ISC2 Graduate Scholarships 2025-26",
@@ -257,7 +307,9 @@
         "deadline": "03 Mar, 2025",
         "location": "Any university/institution across the world",
         "link": "https://www.wemakescholars.com/scholarship/isc-graduate-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/MyUkcrJSoE-UMg9OR3tPuYzXrGY6oNsf.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/MyUkcrJSoE-UMg9OR3tPuYzXrGY6oNsf.webp",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "ISC2 Undergraduate Scholarships 2025-26",
@@ -267,7 +319,9 @@
         "deadline": "03 Mar, 2025",
         "location": "Any university across the world",
         "link": "https://www.wemakescholars.com/scholarship/isc-undergraduate-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/MyUkcrJSoE-UMg9OR3tPuYzXrGY6oNsf.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/MyUkcrJSoE-UMg9OR3tPuYzXrGY6oNsf.webp",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Associate Scholarships At The Center For Cyber Safety And Education 2025-26",
@@ -277,7 +331,9 @@
         "deadline": "03 Mar, 2025",
         "location": "Any community college across the world",
         "link": "https://www.wemakescholars.com/scholarship/associate-scholarships-at-the-center-for-cyber-safety-and-education",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/MyUkcrJSoE-UMg9OR3tPuYzXrGY6oNsf.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/MyUkcrJSoE-UMg9OR3tPuYzXrGY6oNsf.webp",
+        "sentiment_score": -0.0667,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Erasmus Mundus-MaMaSELF Scholarships 2025",
@@ -287,7 +343,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Universities in European Union",
         "link": "https://www.wemakescholars.com/scholarship/mamaself-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1BizhVceG8_R_XUU5XMrVuF4YLHhHv-J.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1BizhVceG8_R_XUU5XMrVuF4YLHhHv-J.webp",
+        "sentiment_score": 0.175,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "JN Tata Endowment Loan Scholarship 2025",
@@ -297,7 +355,9 @@
         "deadline": "07 Mar, 2025",
         "location": "Top universities/institutions in the World",
         "link": "https://www.wemakescholars.com/scholarship/jn-tata-endowment-loan-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1954.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1954.webp",
+        "sentiment_score": 0.2,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "The Mary Trevelyan Hardship Fund By International Students House 2025",
@@ -307,7 +367,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Higher Education Institutions in London",
         "link": "https://www.wemakescholars.com/scholarship/the-mary-trevelyan-hardship-fund-International-students-house",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/BeXzhSvIlAlXhigsR1wwi93_9ywMXHa2.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/BeXzhSvIlAlXhigsR1wwi93_9ywMXHa2.webp",
+        "sentiment_score": 0.05,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "LB Wood Scholarship At Massey University 2025",
@@ -317,7 +379,9 @@
         "deadline": "01 Apr, 2025",
         "location": "University or Institution at UK.",
         "link": "https://www.wemakescholars.com/scholarship/lb-wood-scholarship-at-massey-university",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/419.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/419.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Wellcome Career Development Awards 2025",
@@ -327,7 +391,9 @@
         "deadline": "03 Apr, 2025",
         "location": "Universities/Research Institutions in the UK, Republic of Ireland, Low- or middle-income countries (apart from India and mainland China)",
         "link": "https://www.wemakescholars.com/scholarship/wellcome-career-development-awards",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/pFustKTa28d08mP7eJFrBajnP0rVF9Nm.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/pFustKTa28d08mP7eJFrBajnP0rVF9Nm.webp",
+        "sentiment_score": 0.0833,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "ICMR-DHR International Fellowship Programme For Indian Biomedical Scientists 2025",
@@ -337,7 +403,9 @@
         "deadline": "10 Jun, 2025",
         "location": "International Institute/Laboratory in any foreign country",
         "link": "https://www.wemakescholars.com/scholarship/icmr-dhr-international-fellowship-programme-for-indian-biomedical-scientists",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/512.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/512.webp",
+        "sentiment_score": 0.0562,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Boehringer Ingelheim Fonds MD Fellowships 2025",
@@ -347,7 +415,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Renowned research laboratories across the world except their home institution and city.",
         "link": "https://www.wemakescholars.com/scholarship/boehringer-ingelheim-fonds-md-fellowships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/940.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/940.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Early Career Fellowships By Leverhulme Trust 2025",
@@ -357,7 +427,9 @@
         "deadline": "20 Feb, 2025",
         "location": "Universities and institutions in UK",
         "link": "https://www.wemakescholars.com/scholarship/early-career-fellowships-by-the-leverhulme-trust",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1976.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1976.webp",
+        "sentiment_score": 0.0,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Igniting Minds Foreign Fellowship 2025",
@@ -367,7 +439,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Any institution/university across the world (excluding India)",
         "link": "https://www.wemakescholars.com/scholarship/igniting-minds-foreign-fellowship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/NejEJjM3jjYTuHx_wYYnGmN3F4XtdM_l.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/NejEJjM3jjYTuHx_wYYnGmN3F4XtdM_l.webp",
+        "sentiment_score": -0.1125,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Doctoral Research Grant By The Al Qasimi Foundation 2025",
@@ -377,7 +451,9 @@
         "deadline": "02 Mar, 2025",
         "location": "Any accredited university in the United Arab Emirates or abroad",
         "link": "https://www.wemakescholars.com/scholarship/the-al-qasimi-foundation-s-doctoral-research-grants",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/671.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/671.webp",
+        "sentiment_score": 0.35,
+        "student_friendly_rating": 4
     },
     {
         "scholarship_name": "Daphne Jackson Fellowship At UKRI 2025",
@@ -387,7 +463,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Universities, research institutions across UK and Ireland",
         "link": "https://www.wemakescholars.com/scholarship/daphne-jackson-fellowship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/BmnjLntFLFJJsNKZd9OVxzH89rut1JFp.jfif"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/BmnjLntFLFJJsNKZd9OVxzH89rut1JFp.jfif",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "CWIT Short Research Grants",
@@ -397,7 +475,9 @@
         "deadline": "28 Feb, 2025",
         "location": "Educational Institutions in the UK",
         "link": "https://www.wemakescholars.com/scholarship/charles-wallace-india-trust-cwit-short-research-grants",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/615.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/615.webp",
+        "sentiment_score": 0.1625,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "John Crump Studentships In UK",
@@ -407,7 +487,9 @@
         "deadline": "30 Apr, 2025",
         "location": "Universities in the UK",
         "link": "https://www.wemakescholars.com/scholarship/john-crump-studentship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1973.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1973.webp",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "CWIT Long-Term Grants 2025-26",
@@ -417,7 +499,9 @@
         "deadline": "30 Mar, 2025",
         "location": "Universities in the UK",
         "link": "https://www.wemakescholars.com/scholarship/charles-wallace-india-trust-cwit-long-term-grants",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/615.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/615.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "The Leakey Foundation-Franklin Mosher Baldwin Memorial Fellowships 2025",
@@ -427,7 +511,9 @@
         "deadline": "15 Feb, 2025",
         "location": "From any institution outside of the student's home country",
         "link": "https://www.wemakescholars.com/scholarship/franklin-mosher-baldwin-memorial-fellowships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/Uv5sIcIKqO6iEh3EPeUqo7x_8yhSR9ez.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/Uv5sIcIKqO6iEh3EPeUqo7x_8yhSR9ez.webp",
+        "sentiment_score": -0.0333,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "AP Ambedkar Overseas Vidya Nidhi Scholarships For SC Students 2024-25",
@@ -437,7 +523,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Universities in the USA, Canada, UK, Singapore, Australia, Germany, New Zealand, Sweden, Netherlands, France, Denmark, Russia, China, Philippines and Kazakhstan",
         "link": "https://www.wemakescholars.com/scholarship/ap-ambedkar-overseas-vidya-nidhi-scholarships-for-sc-students",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/uI0T231U_fsuw_SohfGddDLsIZPJ_4Pm.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/uI0T231U_fsuw_SohfGddDLsIZPJ_4Pm.webp",
+        "sentiment_score": 0.2432,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "ServiceScape Scholarship 2025",
@@ -447,7 +535,9 @@
         "deadline": "30 Nov, 2025",
         "location": "Universities or Institutions all over the World",
         "link": "https://www.wemakescholars.com/scholarship/servicescape-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/jyyD6lf06ZsjELDWswA0TeO_lBv2q9X-.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/jyyD6lf06ZsjELDWswA0TeO_lBv2q9X-.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Study Abroad Excellence Award 2025",
@@ -457,7 +547,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Any university/institution across the globe",
         "link": "https://www.wemakescholars.com/scholarship/study-abroad-excellence-award",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/5k2O1hrVy2oinUAtvaLCz1gElK5wPysw.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/5k2O1hrVy2oinUAtvaLCz1gElK5wPysw.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Nehru Study Abroad Scholarship 2025",
@@ -467,7 +559,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Any university across the globe",
         "link": "https://www.wemakescholars.com/scholarship/nehru-study-abroad-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/IfntHlleStS_qVjMOGQT6tHl3vOkpsSt.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/IfntHlleStS_qVjMOGQT6tHl3vOkpsSt.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Travel Grants By The Boehringer Ingelheim Fonds 2025",
@@ -477,7 +571,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Institutions in the UK",
         "link": "https://www.wemakescholars.com/scholarship/the-boehringer-ingelheim-fonds-travel-grants",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/940.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/940.webp",
+        "sentiment_score": 0.35,
+        "student_friendly_rating": 4
     },
     {
         "scholarship_name": "Henrietta Hutton Research Grant, 2025",
@@ -487,7 +583,9 @@
         "deadline": "03 Feb, 2025",
         "location": "UK Higher Education Institution",
         "link": "https://www.wemakescholars.com/scholarship/henrietta-hutton-research-grant",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2036.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2036.webp",
+        "sentiment_score": 0.0708,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Nokia Visiting Professor Scholarships 2024",
@@ -497,7 +595,9 @@
         "deadline": "08 Nov, 2024",
         "location": "Finland (for foreign professors), Finnish professors in foreign universities",
         "link": "https://www.wemakescholars.com/scholarship/nokia-visiting-professor-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2889.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2889.webp",
+        "sentiment_score": -0.1167,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "BeArt Presets Academic Scholarships 2024",
@@ -507,7 +607,9 @@
         "deadline": "01 Apr, 2025",
         "location": "Accredited University or Academic Institutions worldwide",
         "link": "https://www.wemakescholars.com/scholarship/beart-presets-academic-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2085.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2085.webp",
+        "sentiment_score": -0.0333,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Wahlgrenska Foundation Scholarships 2024",
@@ -517,7 +619,9 @@
         "deadline": "20 Sep, 2024",
         "location": "All institutions around the World",
         "link": "https://www.wemakescholars.com/scholarship/wahlgrenska-foundation-scolarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/yapib0mLFKFGDgRl0_QJPsdsQGrgElkP.gif"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/yapib0mLFKFGDgRl0_QJPsdsQGrgElkP.gif",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Rapid Formations Entrepreneur Scholarship Programme 2024",
@@ -527,7 +631,9 @@
         "deadline": "31 Aug, 2024",
         "location": "Selected universities in the UK and the US",
         "link": "https://www.wemakescholars.com/scholarship/rapid-formations-entrepreneur-scholarship-programme",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/177.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/177.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Dudley Stamp Memorial Award By Royal Geographical Society 2024",
@@ -537,7 +643,9 @@
         "deadline": "23 Nov, 2024",
         "location": "Higher Education institutions in the UK",
         "link": "https://www.wemakescholars.com/scholarship/dudley-stamp-memorial-award-by-royal-geographical-society",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2036.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2036.webp",
+        "sentiment_score": 0.075,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "ERCIM Alain Bensoussan Fellowship Program 2024",
@@ -547,7 +655,9 @@
         "deadline": "02 Oct, 2024",
         "location": "European Research Institutes",
         "link": "https://www.wemakescholars.com/scholarship/ercim-alain-bensoussan-fellowship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/97.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/97.webp",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "IMechE First Year Undergraduate Scholarships 2023",
@@ -557,7 +667,9 @@
         "deadline": "30 Jun, 2022",
         "location": "Institutions in UK",
         "link": "https://www.wemakescholars.com/scholarship/imeche-first-year-undergraduate-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/fF66azuoNGUDa1rAZmWo41TC6odRpKhZ.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/fF66azuoNGUDa1rAZmWo41TC6odRpKhZ.webp",
+        "sentiment_score": 0.075,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "UK- India TOEFL Scholarships 2024",
@@ -567,7 +679,9 @@
         "deadline": "15 Aug, 2024",
         "location": "At UK Universities",
         "link": "https://www.wemakescholars.com/scholarship/ets-toefl-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/837.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/837.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Kate Neal Kinley Memorial Fellowships At University Of Illinois Urbana-Champaign 2024",
@@ -577,7 +691,9 @@
         "deadline": "01 Dec, 2024",
         "location": "Any university around the world",
         "link": "https://www.wemakescholars.com/scholarship/kate-neal-kinley-memorial-fellowship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/899.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/899.webp",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Google PhD Fellowship Program 2025",
@@ -587,7 +703,9 @@
         "deadline": "08 May, 2024",
         "location": "Applicant's host university",
         "link": "https://www.wemakescholars.com/scholarship/google-phd-fellowship-program",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/23.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/23.webp",
+        "sentiment_score": 0.175,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Dr. Eduard Gubelin Research Scholarship 2024",
@@ -597,7 +715,9 @@
         "deadline": "31 Jul, 2024",
         "location": "Anywhere across the world",
         "link": "https://www.wemakescholars.com/scholarship/dr-eduard-gubelin-research-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/467.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/467.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Mawista Scholarships 2024",
@@ -607,7 +727,9 @@
         "deadline": "15 Jan, 2024",
         "location": "All universities across the globe",
         "link": "https://www.wemakescholars.com/scholarship/mawista-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1410.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1410.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Silk Roads Youth Research Grants 2023",
@@ -617,7 +739,9 @@
         "deadline": "14 Jun, 2023",
         "location": "All countries",
         "link": "https://www.wemakescholars.com/scholarship/silk-roads-youth-research-grants",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1016.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1016.webp",
+        "sentiment_score": -0.0333,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Jane M Klausman Women In Business Scholarship 2024",
@@ -627,7 +751,9 @@
         "deadline": "30 Jun, 2024",
         "location": "Business Institutions across the world",
         "link": "https://www.wemakescholars.com/scholarship/jane-m-klausman-women-in-business-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/dgZGIQPV1o5BvaVICWIZxO7oUtQBZtLi.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/dgZGIQPV1o5BvaVICWIZxO7oUtQBZtLi.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Google Europe Scholarship For Students With Disabilities 2024",
@@ -637,7 +763,9 @@
         "deadline": "07 May, 2024",
         "location": "Universties in Europe",
         "link": "https://www.wemakescholars.com/scholarship/google-europe-scholarship-for-students-with-disabilities",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/23.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/23.webp",
+        "sentiment_score": -0.0333,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "NAC Arts Scholarship 2025",
@@ -647,17 +775,21 @@
         "deadline": "03 Apr, 2025",
         "location": "Recognized Universities or Arts Institutions in Singapore or overseas",
         "link": "https://www.wemakescholars.com/scholarship/nac-arts-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/145.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/145.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
-        "scholarship_name": "Marie Skłodowska-Curie Actions Postdoctoral Fellowships 2025",
+        "scholarship_name": "Marie Sk\u0142odowska-Curie Actions Postdoctoral Fellowships 2025",
         "eligible_degrees": "Post Doc",
         "funding_type": "Partial Funding",
         "eligible_courses": "All research fields offered by the universities",
         "deadline": "10 Jun, 2025",
         "location": "universities/research institutions in the EU",
         "link": "https://www.wemakescholars.com/scholarship/marie-sklodowska-curie-actions-postdoctoral-fellowships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1797.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1797.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Commonwealth Split Site Phd Scholarships 2025",
@@ -667,7 +799,9 @@
         "deadline": "17 Feb, 2024",
         "location": "Any University of UK",
         "link": "https://www.wemakescholars.com/scholarship/commonwealth-splitsite-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1197.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1197.webp",
+        "sentiment_score": 0.35,
+        "student_friendly_rating": 4
     },
     {
         "scholarship_name": "Young Journalist Award, 2023",
@@ -677,7 +811,9 @@
         "deadline": "12 Aug, 2023",
         "location": "presented in london",
         "link": "https://www.wemakescholars.com/scholarship/young-journalist-award",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/miq-Sg70BEqDWLQedSfWawnRO_7vXEi_.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/miq-Sg70BEqDWLQedSfWawnRO_7vXEi_.webp",
+        "sentiment_score": -0.0417,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Charles Wallace India Trust Scholarships 2025",
@@ -687,7 +823,9 @@
         "deadline": "31 Jan, 2025",
         "location": "UK institutions",
         "link": "https://www.wemakescholars.com/scholarship/charles-wallace-professional-visits-program",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/615.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/615.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Ramboll Scholarships, 2025",
@@ -697,7 +835,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Anywhere across the world",
         "link": "https://www.wemakescholars.com/scholarship/ramboll-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/6fG_JJHDNXfGzyTU2dntzjyEgSh2eKAT.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/6fG_JJHDNXfGzyTU2dntzjyEgSh2eKAT.webp",
+        "sentiment_score": 0.0,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Center For Cyber Safety And Education Certification Scholarship 2024",
@@ -707,7 +847,9 @@
         "deadline": "16 Oct, 2023",
         "location": "Any university around the world",
         "link": "https://www.wemakescholars.com/scholarship/center-for-cyber-safety-and-education-certification-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/MyUkcrJSoE-UMg9OR3tPuYzXrGY6oNsf.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/MyUkcrJSoE-UMg9OR3tPuYzXrGY6oNsf.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Novus Biologicals Scholarship 2024",
@@ -717,7 +859,9 @@
         "deadline": "06 Jun, 2024",
         "location": "Open for Schools/Colleges/Institutes within the US, Canada, and European countries",
         "link": "https://www.wemakescholars.com/scholarship/novus-biologicals-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1262.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1262.webp",
+        "sentiment_score": -0.025,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Microsoft Imagine Cup Global Competition 2025",
@@ -727,7 +871,9 @@
         "deadline": "31 Oct, 2024",
         "location": "Anywhere across the world",
         "link": "https://www.wemakescholars.com/scholarship/microsoft-imagine-cup-global-competition",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/4i_3IGbZINE30c8W9Ka6Yd8koiD_hQpL.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/4i_3IGbZINE30c8W9Ka6Yd8koiD_hQpL.webp",
+        "sentiment_score": 0.175,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "The Dalai Lama Trust Scholarships, 2023",
@@ -737,7 +883,9 @@
         "deadline": "31 May, 2023",
         "location": "Universities in Europe, Australia or North America",
         "link": "https://www.wemakescholars.com/scholarship/the-dalai-lama-trust-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1683.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1683.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "MCW Global Young Leaders Fellowship Program 2025",
@@ -747,7 +895,9 @@
         "deadline": "10 Nov, 2024",
         "location": "Any university/institution around the world",
         "link": "https://www.wemakescholars.com/scholarship/mcw-global-young-leaders-access-program",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/eDLwFUI_EjND4PhW0gE5CC5BoIHy_nWR.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/eDLwFUI_EjND4PhW0gE5CC5BoIHy_nWR.webp",
+        "sentiment_score": 0.13,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "British Institute Of Persian Studies Research And Travel Grant Awards 2024",
@@ -757,7 +907,9 @@
         "deadline": "13 Feb, 2024",
         "location": "UK based institute of higher education or a UK museum",
         "link": "https://www.wemakescholars.com/scholarship/british-institute-of-persian-studies-research-and-travel-grant-awards",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/H4RLXNtn5A_gQ0dZFfmsnhlip8-By5bB.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/H4RLXNtn5A_gQ0dZFfmsnhlip8-By5bB.webp",
+        "sentiment_score": 0.0458,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "St Andrews Prize For The Environment 2024",
@@ -767,7 +919,9 @@
         "deadline": "12 Apr, 2024",
         "location": "Any institution/university across the world",
         "link": "https://www.wemakescholars.com/scholarship/st-andrews-prize-for-the-environment",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1395.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1395.webp",
+        "sentiment_score": -0.1125,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "TS Ambedkar Overseas Vidya Nidhi Scholarship Minorities 2024",
@@ -777,7 +931,9 @@
         "deadline": "29 Oct, 2024",
         "location": "Universities in the USA, Canada, Germany, France, UK, Singapore, Japan, South Korea, Australia and New Zealand",
         "link": "https://www.wemakescholars.com/scholarship/ts-ambedkar-overseas-vidya-nidhi-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/593.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/593.webp",
+        "sentiment_score": 0.2432,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Chief Minister'S Overseas Scholarship Scheme For Minorities 2024",
@@ -787,7 +943,9 @@
         "deadline": "31 Dec, 2024",
         "location": "Universities of selected countries",
         "link": "https://www.wemakescholars.com/scholarship/chief-ministers-overseas-scholarship-scheme-for-minorities",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/593.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/593.webp",
+        "sentiment_score": 0.35,
+        "student_friendly_rating": 4
     },
     {
         "scholarship_name": "Queen Elizabeth Commonwealth Scholarships 2025",
@@ -797,7 +955,9 @@
         "deadline": "31 Dec, 2024",
         "location": "Select universities of the QECS member countries",
         "link": "https://www.wemakescholars.com/scholarship/queen-elizabeth-commonwealth-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1975.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1975.webp",
+        "sentiment_score": 0.35,
+        "student_friendly_rating": 4
     },
     {
         "scholarship_name": "British Council Scholarships For Women In STEM 2024-25",
@@ -807,7 +967,9 @@
         "deadline": "30 Nov, 2024",
         "location": "Participating universities in the UK",
         "link": "https://www.wemakescholars.com/scholarship/british-council-scholarships-for-women-in-stem",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/883.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/883.webp",
+        "sentiment_score": 0.175,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "BAICE Compare Fellowship 2024-25",
@@ -817,7 +979,9 @@
         "deadline": "08 Apr, 2024",
         "location": "Conferences in UK",
         "link": "https://www.wemakescholars.com/scholarship/baice-compare-fellowship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/MeoRcAyNeTtDadWWbgB54D-kqz1rmYol.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/MeoRcAyNeTtDadWWbgB54D-kqz1rmYol.webp",
+        "sentiment_score": 0.35,
+        "student_friendly_rating": 4
     },
     {
         "scholarship_name": "Nokia Scholarship 2024",
@@ -827,7 +991,9 @@
         "deadline": "18 Sep, 2024",
         "location": "Any university in Finland or abroad",
         "link": "https://www.wemakescholars.com/scholarship/nokia-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2889.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2889.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "University Research Fellowship By The Royal Society 2024",
@@ -837,7 +1003,9 @@
         "deadline": "10 Sep, 2024",
         "location": "University/Research Institutions in United Kingdom",
         "link": "https://www.wemakescholars.com/scholarship/university-research-fellowship-by-the-royal-society",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/256.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/256.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Commonwealth Distance Learning Scholarships 2024",
@@ -847,7 +1015,9 @@
         "deadline": "28 Mar, 2024",
         "location": "Selected UK universities",
         "link": "https://www.wemakescholars.com/scholarship/commonwealth-distance-learning-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2762.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2762.webp",
+        "sentiment_score": 0.0,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Lady Meherbai D Tata Education Trust Scholarship 2023",
@@ -857,7 +1027,9 @@
         "deadline": "27 Apr, 2023",
         "location": "Universities in the United States, UK or Europe",
         "link": "https://www.wemakescholars.com/scholarship/lady-meherbai-d-tata-education-trust-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1954.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1954.webp",
+        "sentiment_score": 0.0,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Bentham-Moxon Trust B.A. Krukoff Fellowship Bursary In Tropical African Botany 2024",
@@ -867,7 +1039,9 @@
         "deadline": "31 Oct, 2024",
         "location": "UK universities offering the MSc in Plant & Fungal Taxonomy, Diversity and Conservation course",
         "link": "https://www.wemakescholars.com/scholarship/benthammoxon-trust-ba-krukoff-fellowship-bursary-in-tropical-african-botany",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/yfABleVOW4HGpKAIAYI7g6nxl14d6672.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/yfABleVOW4HGpKAIAYI7g6nxl14d6672.webp",
+        "sentiment_score": 0.0,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "RMLA Scholarship (General Category) 2025",
@@ -877,7 +1051,9 @@
         "deadline": "15 Aug, 2025",
         "location": "Any University across the world",
         "link": "https://www.wemakescholars.com/scholarship/rmla-masters-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/6lFEf8CkUQUihKiu4jSv6qZWxh97bdkP.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/6lFEf8CkUQUihKiu4jSv6qZWxh97bdkP.webp",
+        "sentiment_score": -0.0167,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "National Overseas Scholarship For SC And ST Candidates 2024",
@@ -887,7 +1063,9 @@
         "deadline": "31 Mar, 2024",
         "location": "The course can be taken in any of the top 500 universities in QS ranking",
         "link": "https://www.wemakescholars.com/scholarship/national-overseas-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/oZL9-7MuycW1vIOJtSxKIVoA1SojYtPg.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/oZL9-7MuycW1vIOJtSxKIVoA1SojYtPg.webp",
+        "sentiment_score": 0.2,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Baxter Family Competition On Federalism At McGill University 2025",
@@ -897,7 +1075,9 @@
         "deadline": "07 Feb, 2025",
         "location": "Any institution across the world",
         "link": "https://www.wemakescholars.com/scholarship/baxter-family-competition-on-federalism",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/652.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/652.webp",
+        "sentiment_score": -0.1125,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Ritchie-Jennings Memorial Scholarship Program 2025-26",
@@ -907,7 +1087,9 @@
         "deadline": "07 Feb, 2025",
         "location": "Any university across the world",
         "link": "https://www.wemakescholars.com/scholarship/ritchie-jennings-memorial-scholarship-program",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/230.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/230.webp",
+        "sentiment_score": -0.25,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "The Oxford Law And Policy Fellowship 2023",
@@ -917,7 +1099,9 @@
         "deadline": "10 Jun, 2025",
         "location": "Open for UK Nationals",
         "link": "https://www.wemakescholars.com/scholarship/the-oxford-law-and-policy-fellowship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/108.JPG"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/108.JPG",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "ACES Erasmus Mundus Joint Master Degree Scholarships, 2024",
@@ -927,7 +1111,9 @@
         "deadline": "04 Feb, 2024",
         "location": "Universities in Scotland, Crete, and France",
         "link": "https://www.wemakescholars.com/scholarship/aces-erasmus-mundus-joint-master-degree-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1BizhVceG8_R_XUU5XMrVuF4YLHhHv-J.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1BizhVceG8_R_XUU5XMrVuF4YLHhHv-J.webp",
+        "sentiment_score": 0.35,
+        "student_friendly_rating": 4
     },
     {
         "scholarship_name": "Monica Cole Research Grant 2025",
@@ -937,7 +1123,9 @@
         "deadline": "03 Feb, 2025",
         "location": "registered at a UK Higher Education Institution.",
         "link": "https://www.wemakescholars.com/scholarship/monica-cole-research-grant",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2036.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2036.webp",
+        "sentiment_score": 0.075,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "1st Formations Business Scholarship 2024",
@@ -947,7 +1135,9 @@
         "deadline": "31 Jan, 2025",
         "location": "Recognised US and UK academic institutes",
         "link": "https://www.wemakescholars.com/scholarship/1st-formations-business-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/c05_dkzumH8HG9d8hSlZijchrIcZ7hi8.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/c05_dkzumH8HG9d8hSlZijchrIcZ7hi8.webp",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Sir William Hartley Scholarship At University Of Canterbury",
@@ -957,7 +1147,9 @@
         "deadline": "01 Nov, 2024",
         "location": "Any European university",
         "link": "https://www.wemakescholars.com/scholarship/sir-william-hartley-scholarship-at-university-of-canterbury",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1005.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1005.webp",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Postdoctoral Fellowships At British Academy 2024-25",
@@ -967,17 +1159,21 @@
         "deadline": "02 Oct, 2024",
         "location": "Institutions in the UK",
         "link": "https://www.wemakescholars.com/scholarship/british-academy-postdoctoral-fellowships-in-uk",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2876.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2876.webp",
+        "sentiment_score": -0.0222,
+        "student_friendly_rating": 2
     },
     {
-        "scholarship_name": "The Institute Of International Education’S Scholar Rescue Fund (IIE-SRF) 2024",
+        "scholarship_name": "The Institute Of International Education\u2019S Scholar Rescue Fund (IIE-SRF) 2024",
         "eligible_degrees": "PhD, Post Doc",
         "funding_type": "Partial Funding",
         "eligible_courses": "Courses offered by the university",
         "deadline": "20 Jan, 2025",
         "location": "Partner Universities worldwide",
         "link": "https://www.wemakescholars.com/scholarship/the-institute-of-international-educations-scholar-rescue-fund-iiesrf-in-us",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/683.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/683.webp",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Collingham Scholarship 2024",
@@ -987,7 +1183,9 @@
         "deadline": "06 May, 2024",
         "location": "Any UK university",
         "link": "https://www.wemakescholars.com/scholarship/collingham-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/4xhNzhZn3LiyedQOk9qyZiG0HeraHS9t.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/4xhNzhZn3LiyedQOk9qyZiG0HeraHS9t.webp",
+        "sentiment_score": 0.35,
+        "student_friendly_rating": 4
     },
     {
         "scholarship_name": "British Hydrological Society And JBA Trust Studentship Award 2023",
@@ -997,7 +1195,9 @@
         "deadline": "05 Aug, 2024",
         "location": "Universities/Institutions in the UK",
         "link": "https://www.wemakescholars.com/scholarship/british-hydrological-society-and-jba-trust-studentship-award",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/655.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/655.webp",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Masters Scholarship At Masters Compare 2024",
@@ -1007,7 +1207,9 @@
         "deadline": "23 Aug, 2024",
         "location": "Any university in the United Kingdom",
         "link": "https://www.wemakescholars.com/scholarship/masterscompare-postgraduate-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/HgnYsa3ustdw38Pad_ueeewkqgTsUS5Z.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/HgnYsa3ustdw38Pad_ueeewkqgTsUS5Z.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Technical Fellowships At UICC 2024",
@@ -1017,7 +1219,9 @@
         "deadline": "12 Aug, 2024",
         "location": "Anywhere across the world",
         "link": "https://www.wemakescholars.com/scholarship/uicc-technical-fellowships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/GspAwPE--X2UTeQaYw0MIn4dCTzGnXkS.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/GspAwPE--X2UTeQaYw0MIn4dCTzGnXkS.webp",
+        "sentiment_score": -0.025,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Howard G. Buffett Fund For Women Journalists (FWJ) 2024",
@@ -1027,7 +1231,9 @@
         "deadline": "26 Dec, 2024",
         "location": "Anywhere across the World",
         "link": "https://www.wemakescholars.com/scholarship/howard-g-buffett-fund-for-women-journalists-fwj",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/mne8lw0xClVMjIY2NA_b8YIw2RprfGdO.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/mne8lw0xClVMjIY2NA_b8YIw2RprfGdO.webp",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Khyentse Foundation Individual Practice Grants 2025",
@@ -1037,7 +1243,9 @@
         "deadline": "15 Jan, 2025",
         "location": "Anywhere across the world ( Buddhist institutions)",
         "link": "https://www.wemakescholars.com/scholarship/kf-individual-practice-grants",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1560.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1560.webp",
+        "sentiment_score": -0.0333,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Martin Lynn Scholarship In African History 2024-25",
@@ -1047,7 +1255,9 @@
         "deadline": "06 Sep, 2024",
         "location": "Universities in the UK",
         "link": "https://www.wemakescholars.com/scholarship/martin-lynn-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2067.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2067.webp",
+        "sentiment_score": -0.0333,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Harry Keen Intermediate Clinical Fellowships In UK, 2023",
@@ -1057,7 +1267,9 @@
         "deadline": "31 May, 2023",
         "location": "Research institution in the UK",
         "link": "https://www.wemakescholars.com/scholarship/harry-keen-intermediate-clinical-fellowship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/483.JPG"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/483.JPG",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Scotland Saltire Scholarships 2023",
@@ -1067,7 +1279,9 @@
         "deadline": "31 Jul, 2023",
         "location": "Universities in Scotland",
         "link": "https://www.wemakescholars.com/scholarship/scotland-saltire-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1785.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1785.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Gordon Signy Fellowships 2024",
@@ -1077,7 +1291,9 @@
         "deadline": "30 Jun, 2023",
         "location": "Anywhere across the world other than the applicant's own country",
         "link": "https://www.wemakescholars.com/scholarship/gordon-signy-fellowships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/880.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/880.webp",
+        "sentiment_score": 0.125,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Studentships And Bursaries At Royal Institute Of Philosophy 2024",
@@ -1087,7 +1303,9 @@
         "deadline": "10 Jun, 2025",
         "location": "UK Universities and Institutions",
         "link": "https://www.wemakescholars.com/scholarship/jacobsen-studentships-and-royal-institute-of-philosophy-bursaries",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2050.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2050.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Kiel University Exchange Scholarships 2024",
@@ -1097,7 +1315,9 @@
         "deadline": "01 Dec, 2024",
         "location": "Partner universities in the UK, France, Estonia, Poland, Russia, China, South Korea, Japan, Canada, Taiwan & the USA",
         "link": "https://www.wemakescholars.com/scholarship/kiel-university-exchange-scholarships",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/YkM5aa5hNfhecQdOnT16LlMyuUOK2WdD.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/YkM5aa5hNfhecQdOnT16LlMyuUOK2WdD.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "ECTRIMS Postdoctoral Research Fellowship Exchange Programme 2024",
@@ -1107,7 +1327,9 @@
         "deadline": "01 Dec, 2024",
         "location": "Institutions in Europe",
         "link": "https://www.wemakescholars.com/scholarship/ectrims-postdoctoral-research-fellowship-exchange-programme",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/1377.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/1377.webp",
+        "sentiment_score": 0.175,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "NERC Independent Research Fellowship 2023",
@@ -1117,7 +1339,9 @@
         "deadline": "08 Nov, 2023",
         "location": "UK (NERC host institutions)",
         "link": "https://www.wemakescholars.com/scholarship/nerc-independent-research-fellowship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/863.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/863.webp",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "QUEST Technician Scholarship By Institution Of Civil Engineers (ICE) 2024",
@@ -1127,7 +1351,9 @@
         "deadline": "22 Nov, 2024",
         "location": "The UK",
         "link": "https://www.wemakescholars.com/scholarship/quest-technician-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/ERkZus-WYo_CyIabEFPOzG0qpQ3aHELr.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/ERkZus-WYo_CyIabEFPOzG0qpQ3aHELr.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Horowitz Foundation Grants 2024",
@@ -1137,7 +1363,9 @@
         "deadline": "01 Dec, 2024",
         "location": "Institutions/Universities across the World",
         "link": "https://www.wemakescholars.com/scholarship/horowitz-foundation-grants",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2760.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2760.webp",
+        "sentiment_score": -0.0333,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "CSIRO Alumni Scholarship In Physics 2025",
@@ -1147,7 +1375,9 @@
         "deadline": "29 Nov, 2024",
         "location": "Any overseas or interstate institution, such as a university or research establishment of international standing..",
         "link": "https://www.wemakescholars.com/scholarship/csiro-alumni-scholarship-in-physics",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/Ef6eUF5B5f8Ytkp-CUE9J6G1_WIUklbE.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/Ef6eUF5B5f8Ytkp-CUE9J6G1_WIUklbE.webp",
+        "sentiment_score": -0.0333,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "UK India TOEFL Scholarship 2024",
@@ -1157,7 +1387,9 @@
         "deadline": "15 Jul, 2024",
         "location": "Universities in the UK",
         "link": "https://www.wemakescholars.com/scholarship/ukindia-toefl-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/t7TiWVqsHIZ9ON036FZH7r6hdg-oz8MR.jfif"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/t7TiWVqsHIZ9ON036FZH7r6hdg-oz8MR.jfif",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "RGS-IBG Postgraduate Research Awards In UK 2025",
@@ -1167,7 +1399,9 @@
         "deadline": "23 Nov, 2024",
         "location": "Should be registered in UK Higher Education institution",
         "link": "https://www.wemakescholars.com/scholarship/rgs-ibg-postgraduate-research-awards",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2036.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2036.webp",
+        "sentiment_score": 0.05,
+        "student_friendly_rating": 3
     },
     {
         "scholarship_name": "Geographical Club Award By Royal Geographical Society 2024",
@@ -1177,7 +1411,9 @@
         "deadline": "23 Nov, 2024",
         "location": "Institutions in the UK",
         "link": "https://www.wemakescholars.com/scholarship/geographical-club-award-by-royal-geographical-society",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/2036.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/2036.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Bill Walsh Scholarship 2024",
@@ -1187,7 +1423,9 @@
         "deadline": "15 Nov, 2024",
         "location": "Anywhere across the world",
         "link": "https://www.wemakescholars.com/scholarship/the-bill-walsh-scholarship",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/hz0pi7TSn5IEiu9iFXvd1VpozNUywUMz.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/hz0pi7TSn5IEiu9iFXvd1VpozNUywUMz.webp",
+        "sentiment_score": -0.1,
+        "student_friendly_rating": 2
     },
     {
         "scholarship_name": "Amelia Earhart Fellowship For Women At Zonta International 2025",
@@ -1197,6 +1435,8 @@
         "deadline": "15 Nov, 2024",
         "location": "Universities offering accredited course in any country",
         "link": "https://www.wemakescholars.com/scholarship/amelia-earhart-fellowship-for-women",
-        "image": "https://static.wemakescholars.com/images/scholarship-providers/dgZGIQPV1o5BvaVICWIZxO7oUtQBZtLi.webp"
+        "image_url": "https://static.wemakescholars.com/images/scholarship-providers/dgZGIQPV1o5BvaVICWIZxO7oUtQBZtLi.webp",
+        "sentiment_score": -0.05,
+        "student_friendly_rating": 2
     }
 ]
