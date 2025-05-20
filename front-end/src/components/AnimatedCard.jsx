@@ -2,9 +2,12 @@ import React, { useRef } from 'react';
 import './AnimatedCard.css';
 import scholarships from '../data/scholarships_200.json';
 import { useInView } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 const AnimatedCard = () => {
   const lastCardRef = useRef(null);
+  const location = useLocation();
+  
   const isLastCardInView = useInView(lastCardRef, { threshold: 0.8 }); // fully visible
 
   return (
@@ -12,7 +15,7 @@ const AnimatedCard = () => {
       <h1 className="text-5xl text-black  font-bold mb-6 text-center">Scholarship For You</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 flex-grow">
-        {scholarships.map((item, index) => {
+        {location.state.resultData.map((item, index) => {
           const isLast = index === scholarships.length - 1;
           return (
             <div
@@ -21,7 +24,7 @@ const AnimatedCard = () => {
               className="block bg-white rounded shadow border border-gray-300 p-4 flex flex-col justify-between"
             >
               <img
-                src={item.image_urlq
+                src={item.image_url
                   
                 }
                 alt={item.scholarship_name}

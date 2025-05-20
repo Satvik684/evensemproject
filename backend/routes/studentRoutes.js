@@ -63,7 +63,7 @@ router.post("/", async (req, res) => {
       let filteredDegree = [];
       const fuseOptions = {
         shouldSort: true,
-        keys: ["eligibility_degree"], // Search in the 'eligible_degrees' field
+        keys: ["eligible_degrees"], // Search in the 'eligible_degrees' field
         threshold: 0.5,
         includeScore: true,
       };
@@ -97,7 +97,7 @@ router.post("/", async (req, res) => {
       let filteredDegree = [];
       const fuseOptions = {
         shouldSort: true,
-        keys: ["eligibility_degree"], // Search in the 'eligible_degrees' field
+        keys: ["eligible_degrees"], // Search in the 'eligible_degrees' field
         threshold: 0.5,
         includeScore: true,
       };
@@ -131,7 +131,7 @@ router.post("/", async (req, res) => {
       let filteredDegree = [];
       const fuseOptions = {
         shouldSort: true,
-        keys: ["eligibility_degree"], // Search in the 'eligible_degrees' field
+        keys: ["eligible_degrees"], // Search in the 'eligible_degrees' field
         threshold: 0.5,
         includeScore: true,
       };

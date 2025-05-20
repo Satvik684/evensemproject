@@ -2,8 +2,10 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const dotenv = require("dotenv");
+let cors = require("cors");
 dotenv.config();
 app.use(express.json());
+app.use(cors());
 
 const studentRoute = require("./routes/studentRoutes"); 
 

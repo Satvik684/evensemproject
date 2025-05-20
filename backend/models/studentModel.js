@@ -105,7 +105,8 @@ const scrapedSchema2 = new mongoose.Schema({
 
 const student = mongoose.model("student", studentSchema);
 const scraped = mongoose.model("scraped", scrapedSchema);
-const scrapeduk = mongoose.model("scrapeduk", scrapedSchema2);
-const scrapedusa = mongoose.model("scrapedusa", scrapedSchema2);
-const scrapedaus = mongoose.model("scrapedaus", scrapedSchema2);
+const scrapeduk = mongoose.model("scrapeduk", scrapedSchema);
+const scrapedusa = mongoose.model("scrapedusa", scrapedSchema);
+const scrapedaus = mongoose.model("scrapedaus", scrapedSchema);
 module.exports = { student, scraped,scrapeduk,scrapedusa,scrapedaus };
+

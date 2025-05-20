@@ -1,37 +1,59 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // 🔥 NEW
-
+import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom"; // 🔥 NEW
+import axios from "axios";
 const Form = () => {
   const [showForm, setShowForm] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    gpa: '',
-    degree: '',
-    location: ''
-  });
+
+  const formDegreeElement = useRef();
+  const formLocationElement = useRef();
+  const formNameElement = useRef();
+  const formGPAElement = useRef();
+  
+
 
   const navigate = useNavigate(); // 🔥 NEW
 
   const degreeOptions = [
-    "Bachelors", "Conferences & Travel Grants", "Diploma", "High/Secondary School",
-    "Masters", "MBA", "PhD", "Post Doc", "Research Fellow/ Scientist", "Training & Short courses"
+    "Bachelors",
+    "Conferences & Travel Grants",
+    "Diploma",
+    "High/Secondary School",
+    "Masters",
+    "MBA",
+    "PhD",
+    "Post Doc",
+    "Research Fellow/ Scientist",
+    "Training & Short courses",
   ];
 
   const locationOptions = [
-    "Any research institution around the world", "Colleges/Universities in India", "Delhi",
-    "Educational institutions in Maharashtra", "India", "Maharashtra", "Universities abroad", "West Bengal"
+    "INDIA","USA","UK","AUSTRALIA"
   ];
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const degreeData = formDegreeElement.current.value;
+    const locationData = formLocationElement.current.value;
+    const postObj = {
+      course : degreeData,
+      country : locationData,
+    }
+    formDegreeElement.current.value="";
+    formLocationElement.current.value="";
+    formNameElement.current.value="";
+    formGPAElement.current.value=0;
+    axios.post('http://localhost:4000/api/user',postObj)
+    .then((response)=>{
+      const myArr = response.data;
+      navigate("/results",{state:{resultData:myArr}});
+    })
+    .catch((error)=>{
+      console.log("error");
+    })
+    
     // Redirect to AnimatedCard
-    navigate("/results");
+    
   };
 
   return (
@@ -52,58 +74,70 @@ const Form = () => {
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Name
+                </label>
                 <input
                   type="text"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
+                  ref={formNameElement}
                   className="w-full border border-gray-300 px-3 py-2 rounded text-black"
                   required
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">GPA</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  GPA
+                </label>
                 <input
                   type="number"
                   name="gpa"
                   step="0.01"
-                  value={formData.gpa}
-                  onChange={handleChange}
+                  ref={formGPAElement}
                   className="w-full border border-gray-300 px-3 py-2 rounded text-black"
                   required
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Degree</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Degree
+                </label>
                 <select
                   name="degree"
-                  value={formData.degree}
-                  onChange={handleChange}
+                  ref={formDegreeElement}
                   className="w-full border border-gray-300 px-3 py-2 rounded text-black"
                   required
                 >
-                  <option value="" disabled>Select Degree</option>
+                  <option value="" disabled>
+                    Select Degree
+                  </option>
                   {degreeOptions.map((degree) => (
-                    <option key={degree} value={degree}>{degree}</option>
+                    <option key={degree} value={degree}>
+                      {degree}
+                    </option>
                   ))}
                 </select>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Location</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Location
+                </label>
                 <select
                   name="location"
-                  value={formData.location}
-                  onChange={handleChange}
+                  ref={formLocationElement}
                   className="w-full border border-gray-300 px-3 py-2 rounded text-black"
                   required
                 >
-                  <option value="" disabled>Select Location</option>
+                  <option value="" disabled>
+                    Select Location
+                  </option>
                   {locationOptions.map((location) => (
-                    <option key={location} value={location}>{location}</option>
+                    <option key={location} value={location}>
+                      {location}
+                    </option>
                   ))}
                 </select>
               </div>
