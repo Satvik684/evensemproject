@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-import scholarships from '../../data/scholarships_200.json'; // adjust path if needed
+import scholarships from '../data/scholarships_200.json'; // adjust path if needed
 
 const ScholarshipCards = () => {
   return (

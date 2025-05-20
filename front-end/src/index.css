@@ -1,4 +1,5 @@
  @import "tailwindcss";
+ @import "./components/AnimatedCard.css"
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
