@@ -66,6 +66,16 @@ const scrapedSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+
+  sentiment_score: {
+    type: Number,
+    required: true,
+  },
+
+  student_friendly_rating: {
+    type: Number,
+    required: true,
+  },
 });
 
 const student = mongoose.model("student", studentSchema);

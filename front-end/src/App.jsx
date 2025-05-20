@@ -19,11 +19,14 @@ const App = () => {
               element={
                 <>
                   <Midsec />
-                  <Scholarship />
+                  {/* {<Scholarship />} */}
                 </>
               }
             />
             <Route path="/results" element={<AnimatedCard />} />
+            <Route path="/all-scholarship" element={
+              <Scholarship />
+            }></Route>
           </Routes>
         </main>
 
