@@ -68,45 +68,9 @@ const scrapedSchema = new mongoose.Schema({
   },
 });
 
-const scrapedSchema2 = new mongoose.Schema({
-  scholarship_name: {
-    type: String,
-    required: true,
-  },
-  eligibility_degree: {
-    type: String,
-    required: true,
-  },
-  funding_type: {
-    type: String,
-    required: true,
-  },
-  eligibility_course: {
-    type: String,
-    required: true,
-  },
-  deadline: {
-    type: String,
-    required: true,
-  },
-  location: {
-    type: String,
-    required: true,
-  },
-  link: {
-    type: String,
-    required: true,
-  },
-  image: {
-    type: String,
-    required: true,
-  },
-});
-
 const student = mongoose.model("student", studentSchema);
 const scraped = mongoose.model("scraped", scrapedSchema);
 const scrapeduk = mongoose.model("scrapeduk", scrapedSchema);
 const scrapedusa = mongoose.model("scrapedusa", scrapedSchema);
 const scrapedaus = mongoose.model("scrapedaus", scrapedSchema);
-module.exports = { student, scraped,scrapeduk,scrapedusa,scrapedaus };
-
+module.exports = { student, scraped, scrapeduk, scrapedusa, scrapedaus };
