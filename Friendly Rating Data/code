@@ -1,0 +1,40 @@
+import json
+import pandas as pd
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
+with open('scholarships_200.json', 'r') as f:
+    data = json.load(f)
+
+analyzer = SentimentIntensityAnalyzer()
+processed_data = []
+
+for entry in data:
+    text = f"{entry.get('scholarship_name', '')}. {entry.get('eligible_degrees', '')}. " \
+           f"{entry.get('funding_type', '')}. {entry.get('eligible_courses', '')}. " \
+           f"{entry.get('location', '')}. {entry.get('deadline', '')}."
+
+    score = analyzer.polarity_scores(text)['compound']
+
+    if score >= 0.5:
+        rating = 5
+    elif score >= 0.25:
+        rating = 4
+    elif score >= 0:
+        rating = 3
+    elif score >= -0.25:
+        rating = 2
+    else:
+        rating = 1
+
+    entry['sentiment_score'] = score
+    entry['student_friendly_rating'] = rating
+    processed_data.append(entry)
+
+df = pd.DataFrame(processed_data)
+df.to_csv('scholarship_sentiment_rated.csv', index=False)
+
+df = pd.read_csv('scholarship_sentiment_rated.csv')
+
+df.to_json('scholarship_sentiment_rated.json', orient='records', indent=4)
+
+print("Conversion complete: 'scholarship_sentiment_rated.json' created.")
