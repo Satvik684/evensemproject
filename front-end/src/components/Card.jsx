@@ -5,7 +5,6 @@ const Card = ({ name, degree, photo, deadline, funding, course, location, link }
   const [isWishlisted, setIsWishlisted] = useState(false);
   const navigate = useNavigate();
 
-  // Check on mount if already wishlisted
   useEffect(() => {
     const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
     const alreadyExists = wishlist.some(item => item.name === name);
@@ -34,11 +33,11 @@ const Card = ({ name, degree, photo, deadline, funding, course, location, link }
       localStorage.setItem("wishlist", JSON.stringify(wishlist));
     }
 
-    setIsWishlisted(true);
+    navigate('/wishlist');
   };
 
   const goToWishlist = () => {
-    navigate('/wishlist'); // Make sure this route exists in your app
+    navigate('/wishlist');
   };
 
   return (
@@ -71,14 +70,14 @@ const Card = ({ name, degree, photo, deadline, funding, course, location, link }
       {isWishlisted ? (
         <button
           onClick={goToWishlist}
-          className="mt-2 px-4 py-2 text-sm bg-pink-600 text-white rounded hover:bg-green-700 transition text-center"
+          className="mt-2 px-4 py-2 text-sm bg-green-600 text-white rounded hover:bg-green-700 transition text-center"
         >
           Go to Wishlist
         </button>
       ) : (
         <button
           onClick={handleAddToWishlist}
-          className="mt-2 px-4 py-2 text-sm bg-green-500 text-white rounded hover:bg-pink-600 transition text-center"
+          className="mt-2 px-4 py-2 text-sm bg-pink-500 text-white rounded hover:bg-pink-600 transition text-center"
         >
           Add to Wishlist
         </button>

@@ -25,8 +25,9 @@ const AnimatedCard = () => {
     if (!alreadyExists) {
       wishlist.push(item);
       localStorage.setItem("wishlist", JSON.stringify(wishlist));
-      setWishlistedItems(prev => [...prev, item.scholarship_name]);
     }
+
+    navigate("/wishlist");
   };
 
   const goToWishlist = () => {
@@ -83,14 +84,14 @@ const AnimatedCard = () => {
               {isWishlisted ? (
                 <button
                   onClick={goToWishlist}
-                  className="mt-2 px-4 py-2 text-sm bg-pink-600 text-white rounded hover:bg-green-700 transition text-center"
+                  className="mt-2 px-4 py-2 text-sm bg-green-600 text-white rounded hover:bg-green-700 transition text-center"
                 >
                   Go to Wishlist
                 </button>
               ) : (
                 <button
                   onClick={() => handleAddToWishlist(item)}
-                  className="mt-2 px-4 py-2 text-sm bg-green-500 text-white rounded hover:bg-pink-600 transition text-center"
+                  className="mt-2 px-4 py-2 text-sm bg-pink-500 text-white rounded hover:bg-pink-600 transition text-center"
                 >
                   Add to Wishlist
                 </button>
