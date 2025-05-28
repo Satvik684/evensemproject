@@ -1,76 +1,111 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./AnimatedCard.css";
 import { useInView } from "framer-motion";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const AnimatedCard = () => {
   const lastCardRef = useRef(null);
   const location = useLocation();
-  let respArr = location.state.resultData;
-  const isLastCardInView = useInView(lastCardRef, { threshold: 0.8 }); // fully visible
-  
+  const navigate = useNavigate();
+  const respArr = location.state.resultData;
+  const isLastCardInView = useInView(lastCardRef, { threshold: 0.8 });
+
+  const [wishlistedItems, setWishlistedItems] = useState([]);
+
+  useEffect(() => {
+    const storedWishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    const wishlistedNames = storedWishlist.map(item => item.scholarship_name);
+    setWishlistedItems(wishlistedNames);
+  }, [respArr]);
+
+  const handleAddToWishlist = (item) => {
+    const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    const alreadyExists = wishlist.some(w => w.scholarship_name === item.scholarship_name);
+
+    if (!alreadyExists) {
+      wishlist.push(item);
+      localStorage.setItem("wishlist", JSON.stringify(wishlist));
+      setWishlistedItems(prev => [...prev, item.scholarship_name]);
+    }
+  };
+
+  const goToWishlist = () => {
+    navigate("/wishlist");
+  };
 
   return (
-    <>
-      <div className="bg-gray-100 p-6 min-h-screen flex flex-col">
-        <h1 className="text-5xl text-black  font-bold mb-6 text-center">
-          {(respArr.length===0) ? " No Scholarships Found!" :  "Scholarships for you"} 
-        </h1>
+    <div className="bg-gray-100 p-6 min-h-screen flex flex-col">
+      <h1 className="text-5xl text-black font-bold mb-6 text-center">
+        {respArr.length === 0 ? "No Scholarships Found!" : "Scholarships for you"}
+      </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 flex-grow">
-          {respArr.map((item, index) => {
-            const isLast = index === respArr.length - 1;
-            return (
-              <div
-                ref={isLast ? lastCardRef : null}
-                key={index}
-                className="block bg-white rounded shadow border border-gray-300 p-4 flex flex-col justify-between"
-              >
-                <img
-                  src={item.image_url}
-                  alt={item.scholarship_name}
-                  className="w-full h-32 object-contain mb-4 rounded"
-                />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 flex-grow">
+        {respArr.map((item, index) => {
+          const isLast = index === respArr.length - 1;
+          const isWishlisted = wishlistedItems.includes(item.scholarship_name);
 
-                <div className="flex flex-col gap-1 flex-grow">
-                  <h2 className="text-lg font-semibold text-gray-800">
-                    {item.scholarship_name}
-                  </h2>
+          return (
+            <div
+              ref={isLast ? lastCardRef : null}
+              key={index}
+              className="block bg-white rounded shadow border border-gray-300 p-4 flex flex-col justify-between"
+            >
+              <img
+                src={item.image_url}
+                alt={item.scholarship_name}
+                className="w-full h-32 object-contain mb-4 rounded"
+              />
 
-                  <div className="text-sm text-gray-600">
-                    🎓 <strong>{item.eligible_degrees}</strong> | 💰{" "}
-                    <strong>{item.funding_type}</strong> | 📚{" "}
-                    <strong>{item.eligible_courses}</strong>
-                  </div>
+              <div className="flex flex-col gap-1 flex-grow">
+                <h2 className="text-lg font-semibold text-gray-800">
+                  {item.scholarship_name}
+                </h2>
 
-                  <div className="text-sm text-gray-600">
-                    📍 {item.location}
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    📅 Deadline: {item.deadline}
-                  </div>
+                <div className="text-sm text-gray-600">
+                  🎓 <strong>{item.eligible_degrees}</strong> | 💰{" "}
+                  <strong>{item.funding_type}</strong> | 📚{" "}
+                  <strong>{item.eligible_courses}</strong>
                 </div>
 
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-block bg-blue-600 text-white text-center py-2 px-4 rounded hover:bg-blue-700 transition"
-                >
-                  Apply Now
-                </a>
+                <div className="text-sm text-gray-600">📍 {item.location}</div>
+                <div className="text-sm text-gray-600">📅 Deadline: {item.deadline}</div>
               </div>
-            );
-          })}
-        </div>
 
-        {isLastCardInView && (
-          <footer className="mt-10 text-center text-sm text-gray-500 animate-fade-in">
-            © 2025 Scholarship Portal. Built by Hirdesh.
-          </footer>
-        )}
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block bg-blue-600 text-white text-center py-2 px-4 rounded hover:bg-blue-700 transition"
+              >
+                Apply Now
+              </a>
+
+              {isWishlisted ? (
+                <button
+                  onClick={goToWishlist}
+                  className="mt-2 px-4 py-2 text-sm bg-pink-600 text-white rounded hover:bg-green-700 transition text-center"
+                >
+                  Go to Wishlist
+                </button>
+              ) : (
+                <button
+                  onClick={() => handleAddToWishlist(item)}
+                  className="mt-2 px-4 py-2 text-sm bg-green-500 text-white rounded hover:bg-pink-600 transition text-center"
+                >
+                  Add to Wishlist
+                </button>
+              )}
+            </div>
+          );
+        })}
       </div>
-    </>
+
+      {isLastCardInView && (
+        <footer className="mt-10 text-center text-sm text-gray-500 animate-fade-in">
+          © 2025 Scholarship Portal. Built by Hirdesh.
+        </footer>
+      )}
+    </div>
   );
 };
 
