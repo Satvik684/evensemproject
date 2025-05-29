@@ -1,5 +1,5 @@
 // src/components/Navbar.jsx
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import LoginModal from './LoginModal';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLogout } from '../hooks/useLogout';
