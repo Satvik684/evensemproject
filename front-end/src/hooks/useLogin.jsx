@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";  
 
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export const useLogin = () => {
     const[error,setError] = useState(null);
@@ -10,6 +11,7 @@ export const useLogin = () => {
 
     const {dispatch} = useAuthContext();
 
+    const navigate = useNavigate();
     const login = async (email,password) => {
         setIsLoading(true);
         setError(null);
@@ -22,6 +24,8 @@ export const useLogin = () => {
             dispatch({type:'LOGIN',payload:response.data});
 
             setIsLoading(false);
+
+            navigate("/");
             
         } catch (error) {
             setIsLoading(false);

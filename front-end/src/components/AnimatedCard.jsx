@@ -3,40 +3,74 @@ import "./AnimatedCard.css";
 import { useInView } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useAuthContext } from "../hooks/useAuthContext";
 
 const AnimatedCard = () => {
   const lastCardRef = useRef(null);
   const location = useLocation();
   const navigate = useNavigate();
+  const { user } = useAuthContext();
+
   const respArr = location.state?.resultData || [];
   const isLastCardInView = useInView(lastCardRef, { threshold: 0.8 });
 
   const [wishlistedItems, setWishlistedItems] = useState([]);
+  const [error, setError] = useState(null);
 
-  // 🔍 Fetch wishlist and mark already wishlisted items
+  // 🔍 Fetch wishlist on mount
   useEffect(() => {
     const fetchWishlist = async () => {
+      if (!user) {
+        setError("You must be logged in to use the wishlist.");
+        return;
+      }
+
       try {
-        const res = await axios.get("http://localhost:4000/api/user/wishlist");
+        const res = await axios.get("http://localhost:4000/api/user/wishlist", {
+          headers: {
+            Authorization: `Bearer ${user.token}`,
+          },
+        });
         const names = res.data.map(item => item.scholarship_name);
         setWishlistedItems(names);
       } catch (err) {
         console.error("Failed to fetch wishlist:", err);
+        if (err.response?.status === 401) {
+          setError("Session expired. Please log in again.");
+        } else {
+          setError("Failed to load wishlist.");
+        }
       }
     };
 
     fetchWishlist();
-  }, []);
+  }, [user]);
 
   const handleAddToWishlist = async (item) => {
+    if (!user) {
+      setError("You must be logged in to add items to wishlist.");
+      return;
+    }
+
     try {
-      await axios.post("http://localhost:4000/api/user/add-to-wishlist", item);
+      await axios.post(
+        "http://localhost:4000/api/user/add-to-wishlist",
+        item,
+        {
+          headers: {
+            Authorization: `Bearer ${user.token}`,
+          },
+        }
+      );
       setWishlistedItems((prev) => [...prev, item.scholarship_name]);
     } catch (error) {
+      console.error("Failed to add to wishlist:", error);
       if (error.response?.status === 409) {
         setWishlistedItems((prev) => [...prev, item.scholarship_name]);
+      } else if (error.response?.status === 401) {
+        setError("Session expired. Please log in again.");
       } else {
-        console.error("Failed to add to wishlist:", error);
+        setError("Could not add item to wishlist.");
       }
     }
   };
@@ -50,6 +84,10 @@ const AnimatedCard = () => {
       <h1 className="text-5xl text-black font-bold mb-6 text-center">
         {respArr.length === 0 ? "No Scholarships Found!" : "Scholarships for you"}
       </h1>
+
+      {error && (
+        <div className="text-red-600 text-center font-medium mb-4">{error}</div>
+      )}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 flex-grow">
         {respArr.map((item, index) => {
@@ -122,4 +160,3 @@ const AnimatedCard = () => {
 };
 
 export default AnimatedCard;
-

@@ -1,38 +1,61 @@
-// src/components/Wishlist.jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import WishListCard from './WishlistCard';
-
+import { useAuthContext } from '../hooks/useAuthContext';
 
 const Wishlist = () => {
   const [wishlist, setWishlist] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const { user } = useAuthContext();
+
   // Fetch wishlist once on mount
   useEffect(() => {
     const fetchWishlist = async () => {
+      if (!user) {
+        setError('Please log in to view your wishlist.');
+        setLoading(false);
+        return;
+      }
+
       try {
         setLoading(true);
-        const res = await axios.get('http://localhost:4000/api/user/wishlist');
+        const res = await axios.get('http://localhost:4000/api/user/wishlist', {
+          headers: {
+            Authorization: `Bearer ${user.token}`
+          }
+        });
         setWishlist(res.data);
       } catch (err) {
-        setError('Failed to load wishlist');
         console.error(err);
+        if (err.response?.status === 401) {
+          setError('Session expired. Please log in again.');
+        } else {
+          setError('Failed to load wishlist');
+        }
       } finally {
         setLoading(false);
       }
     };
 
     fetchWishlist();
-  }, []);
+  }, [user]);
 
   // Handle delete by _id
   const handleDelete = async (id) => {
+    if (!user) {
+      setError('You must be logged in to delete items from your wishlist.');
+      return;
+    }
+
     try {
-      await axios.delete(`http://localhost:4000/api/user/delete/${id}`);
-      // Update local state by filtering out deleted item
-      setWishlist(prev => prev.filter(item => item._id !== id));
+      await axios.delete(`http://localhost:4000/api/user/delete/${id}`, {
+        headers: {
+          Authorization: `Bearer ${user.token}`
+        }
+      });
+      setWishlist((prev) => prev.filter((item) => item._id !== id));
     } catch (err) {
       console.error('Failed to delete item:', err);
       alert('Could not delete the item. Try again later.');
@@ -53,7 +76,7 @@ const Wishlist = () => {
           {wishlist.map((item) => (
             <WishListCard
               key={item._id}
-              id={item._id} // pass _id to card for deletion
+              id={item._id}
               name={item.scholarship_name}
               degree={item.eligible_degrees}
               photo={item.image_url}
@@ -64,7 +87,7 @@ const Wishlist = () => {
               link={item.link}
               sentiment_score={item.sentiment_score}
               student_friendly_rating={item.student_friendly_rating}
-              onDelete={() => handleDelete(item._id)} // callback for delete button
+              onDelete={() => handleDelete(item._id)}
             />
           ))}
         </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { useAuthContext } from '../hooks/useAuthContext';
 
 const Card = ({
   name,
@@ -15,7 +16,9 @@ const Card = ({
   student_friendly_rating
 }) => {
   const [isWishlisted, setIsWishlisted] = useState(false);
+  const [error, setError] = useState(null);
   const navigate = useNavigate();
+  const { user } = useAuthContext();
 
   const item = {
     scholarship_name: name,
@@ -30,32 +33,62 @@ const Card = ({
     student_friendly_rating
   };
 
-  // 🔍 Check if item already in wishlist on mount
   useEffect(() => {
     const checkWishlist = async () => {
+      if (!user) {
+        setError("Please log in to use the wishlist.");
+        return;
+      }
+
       try {
-        const res = await axios.get('http://localhost:4000/api/user/wishlist');
+        const res = await axios.get('http://localhost:4000/api/user/wishlist', {
+          headers: {
+            Authorization: `Bearer ${user.token}`
+          }
+        });
+
         const exists = res.data.some(
           (scholarship) => scholarship.scholarship_name === item.scholarship_name
         );
         setIsWishlisted(exists);
       } catch (error) {
         console.error('Error checking wishlist:', error);
+        if (error.response?.status === 401) {
+          setError("Session expired. Please log in again.");
+        } else {
+          setError("Failed to check wishlist.");
+        }
       }
     };
 
     checkWishlist();
-  }, []);
+  }, [user, item.scholarship_name]);
 
   const handleAddToWishlist = async () => {
+    if (!user) {
+      setError("You must be logged in to add to wishlist.");
+      return;
+    }
+
     try {
-      await axios.post('http://localhost:4000/api/user/add-to-wishlist', item);
+      await axios.post(
+        'http://localhost:4000/api/user/add-to-wishlist',
+        item,
+        {
+          headers: {
+            Authorization: `Bearer ${user.token}`
+          }
+        }
+      );
       setIsWishlisted(true);
     } catch (error) {
       if (error.response?.status === 409) {
-        setIsWishlisted(true); // Already exists
+        setIsWishlisted(true); // Already added
+      } else if (error.response?.status === 401) {
+        setError("Session expired. Please log in again.");
       } else {
         console.error('Failed to add to wishlist:', error);
+        setError("Failed to add to wishlist.");
       }
     }
   };
@@ -90,6 +123,10 @@ const Card = ({
       >
         Apply Now
       </a>
+
+      {error && (
+        <p className="text-red-600 text-sm mt-2 text-center">{error}</p>
+      )}
 
       {isWishlisted ? (
         <button

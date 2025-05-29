@@ -70,7 +70,7 @@ userSchema.statics.login = async function (email,password) {
         throw Error('Incorrect Password');
     }
 
-    return user;
+    return user; 
 }
 
 const User = mongoose.model('User',userSchema);

@@ -10,7 +10,13 @@ const getAllWishlist = require("../controllers/getAllWishlist");
 
 const deleteWishlistItem = require("../controllers/deleteWishlistItem")
 
+
+const requireAuth = require('../middlewares/requireAuth');
+
 const router = express.Router();
+
+//require auth for all of my backend routes
+router.use(requireAuth);
 
 router.post("/", matching);
 

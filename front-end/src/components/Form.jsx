@@ -1,65 +1,81 @@
 import React, { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom"; // 🔥 NEW
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useAuthContext } from "../hooks/useAuthContext";
+
 const Form = () => {
   const [showForm, setShowForm] = useState(false);
+  const [error, setError] = useState(""); // ⚠️ To hold error messages
+  const [loading, setLoading] = useState(false); // ⏳ Optional loading state
 
   const formDegreeElement = useRef();
   const formLocationElement = useRef();
   const formNameElement = useRef();
   const formGPAElement = useRef();
-  
 
-
-  const navigate = useNavigate(); // 🔥 NEW
+  const { user } = useAuthContext();
+  const navigate = useNavigate();
 
   const degreeOptions = [
-    "Bachelors",
-    "Conferences & Travel Grants",
-    "Diploma",
-    "High/Secondary School",
-    "Masters",
-    "MBA",
-    "PhD",
-    "Post Doc",
-    "Research Fellow/ Scientist",
-    "Training & Short courses",
+    "Bachelors", "Conferences & Travel Grants", "Diploma", "High/Secondary School",
+    "Masters", "MBA", "PhD", "Post Doc", "Research Fellow/ Scientist", "Training & Short courses"
   ];
 
-  const locationOptions = [
-    "INDIA","USA","UK","AUSTRALIA"
-  ];
+  const locationOptions = ["INDIA", "USA", "UK", "AUSTRALIA"];
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setError(""); // reset error
+    setLoading(true);
+
+    // 🔒 Check if user is logged in
+    if (!user) {
+      setError("You must be logged in to submit the form.");
+      setLoading(false);
+      return;
+    }
 
     const degreeData = formDegreeElement.current.value;
     const locationData = formLocationElement.current.value;
+
     const postObj = {
-      course : degreeData,
-      country : locationData,
+      course: degreeData,
+      country: locationData,
+    };
+
+    try {
+      const response = await axios.post("http://localhost:4000/api/user", postObj, {
+        headers: {
+          Authorization: `Bearer ${user.token}`,
+        },
+      });
+
+      // 🧹 Clear form
+      formDegreeElement.current.value = "";
+      formLocationElement.current.value = "";
+      formNameElement.current.value = "";
+      formGPAElement.current.value = 0;
+
+      // 🚀 Navigate to results page
+      navigate("/results", { state: { resultData: response.data } });
+    } catch (err) {
+      if (err.response) {
+        setError(err.response.data.error || "Something went wrong. Please try again.");
+      } else {
+        setError("Network error. Please check your connection.");
+      }
+    } finally {
+      setLoading(false);
     }
-    formDegreeElement.current.value="";
-    formLocationElement.current.value="";
-    formNameElement.current.value="";
-    formGPAElement.current.value=0;
-    axios.post('http://localhost:4000/api/user',postObj)
-    .then((response)=>{
-      const myArr = response.data;
-      navigate("/results",{state:{resultData:myArr}});
-    })
-    .catch((error)=>{
-      console.log("error");
-    })
-    
-    // Redirect to AnimatedCard
-    
   };
 
   return (
     <div className="text-center">
       <button
-        onClick={() => setShowForm(true)}
+        onClick={() => {
+          setShowForm(true);
+          setError("");
+        }}
         className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded shadow"
       >
         Get Started
@@ -71,6 +87,12 @@ const Form = () => {
             <h2 className="text-2xl font-bold mb-4 text-center text-blue-700">
               Let's Find Scholarship for You
             </h2>
+
+            {error && (
+              <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded mb-4 text-sm">
+                {error}
+              </div>
+            )}
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -110,9 +132,7 @@ const Form = () => {
                   className="w-full border border-gray-300 px-3 py-2 rounded text-black"
                   required
                 >
-                  <option value="" disabled>
-                    Select Degree
-                  </option>
+                  <option value="" disabled>Select Degree</option>
                   {degreeOptions.map((degree) => (
                     <option key={degree} value={degree}>
                       {degree}
@@ -131,9 +151,7 @@ const Form = () => {
                   className="w-full border border-gray-300 px-3 py-2 rounded text-black"
                   required
                 >
-                  <option value="" disabled>
-                    Select Location
-                  </option>
+                  <option value="" disabled>Select Location</option>
                   {locationOptions.map((location) => (
                     <option key={location} value={location}>
                       {location}
@@ -153,8 +171,9 @@ const Form = () => {
                 <button
                   type="submit"
                   className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded"
+                  disabled={loading}
                 >
-                  Submit
+                  {loading ? "Submitting..." : "Submit"}
                 </button>
               </div>
             </form>
