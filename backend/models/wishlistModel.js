@@ -43,6 +43,10 @@ const wishlistSchema =  new mongoose.Schema({
     type: Number,
     required: true,
   },
+  user_id:{
+    type:String,
+    requires:true,
+  }
 });
 
 const wishlist = mongoose.model("wishlist", wishlistSchema);

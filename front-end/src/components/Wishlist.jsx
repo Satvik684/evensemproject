@@ -5,22 +5,20 @@ import { useAuthContext } from '../hooks/useAuthContext';
 
 const Wishlist = () => {
   const [wishlist, setWishlist] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loadingWishlist, setLoadingWishlist] = useState(true);
   const [error, setError] = useState(null);
 
-  const { user } = useAuthContext();
+  const { user, loading } = useAuthContext(); // <- get loading from context
 
-  // Fetch wishlist once on mount
   useEffect(() => {
     const fetchWishlist = async () => {
       if (!user) {
         setError('Please log in to view your wishlist.');
-        setLoading(false);
+        setLoadingWishlist(false);
         return;
       }
 
       try {
-        setLoading(true);
         const res = await axios.get('http://localhost:4000/api/user/wishlist', {
           headers: {
             Authorization: `Bearer ${user.token}`
@@ -35,14 +33,16 @@ const Wishlist = () => {
           setError('Failed to load wishlist');
         }
       } finally {
-        setLoading(false);
+        setLoadingWishlist(false);
       }
     };
 
-    fetchWishlist();
-  }, [user]);
+    // Wait until AuthContext finishes loading
+    if (!loading) {
+      fetchWishlist();
+    }
+  }, [user, loading]);
 
-  // Handle delete by _id
   const handleDelete = async (id) => {
     if (!user) {
       setError('You must be logged in to delete items from your wishlist.');
@@ -62,7 +62,7 @@ const Wishlist = () => {
     }
   };
 
-  if (loading) return <p className="text-center p-4">Loading wishlist...</p>;
+  if (loading || loadingWishlist) return <p className="text-center p-4">Loading wishlist...</p>;
   if (error) return <p className="text-center p-4 text-red-600">{error}</p>;
 
   return (

@@ -7,9 +7,9 @@ import { useAuthContext } from "../hooks/useAuthContext";
 const ScholarshipCards = () => {
   const [scholarships, setScholarships] = useState([]);
   const [fetching, setFetching] = useState(false);
-  const [error, setError] = useState(null); // 🔥 for displaying errors
+  const [error, setError] = useState(null);
 
-  const { user } = useAuthContext();
+  const { user, loading } = useAuthContext(); // ✅ include loading
 
   useEffect(() => {
     const fetchScholarships = async () => {
@@ -19,7 +19,7 @@ const ScholarshipCards = () => {
       }
 
       setFetching(true);
-      setError(null); // clear previous error
+      setError(null);
 
       try {
         const response = await axios.get("http://localhost:4000/api/user/all", {
@@ -45,10 +45,12 @@ const ScholarshipCards = () => {
       }
     };
 
-    fetchScholarships();
-  }, [user]);
+    if (!loading) {
+      fetchScholarships();
+    }
+  }, [user, loading]);
 
-  if (fetching) return <Loading />;
+  if (loading || fetching) return <Loading />;
 
   if (error) {
     return (

@@ -9,7 +9,7 @@ const AnimatedCard = () => {
   const lastCardRef = useRef(null);
   const location = useLocation();
   const navigate = useNavigate();
-  const { user } = useAuthContext();
+  const { user, loading } = useAuthContext(); // ✅ Include loading from context
 
   const respArr = location.state?.resultData || [];
   const isLastCardInView = useInView(lastCardRef, { threshold: 0.8 });
@@ -17,7 +17,7 @@ const AnimatedCard = () => {
   const [wishlistedItems, setWishlistedItems] = useState([]);
   const [error, setError] = useState(null);
 
-  // 🔍 Fetch wishlist on mount
+  // 🔍 Fetch wishlist after user is available
   useEffect(() => {
     const fetchWishlist = async () => {
       if (!user) {
@@ -31,7 +31,7 @@ const AnimatedCard = () => {
             Authorization: `Bearer ${user.token}`,
           },
         });
-        const names = res.data.map(item => item.scholarship_name);
+        const names = res.data.map((item) => item.scholarship_name);
         setWishlistedItems(names);
       } catch (err) {
         console.error("Failed to fetch wishlist:", err);
@@ -43,8 +43,10 @@ const AnimatedCard = () => {
       }
     };
 
-    fetchWishlist();
-  }, [user]);
+    if (!loading) {
+      fetchWishlist();
+    }
+  }, [user, loading]);
 
   const handleAddToWishlist = async (item) => {
     if (!user) {
@@ -53,15 +55,11 @@ const AnimatedCard = () => {
     }
 
     try {
-      await axios.post(
-        "http://localhost:4000/api/user/add-to-wishlist",
-        item,
-        {
-          headers: {
-            Authorization: `Bearer ${user.token}`,
-          },
-        }
-      );
+      await axios.post("http://localhost:4000/api/user/add-to-wishlist", item, {
+        headers: {
+          Authorization: `Bearer ${user.token}`,
+        },
+      });
       setWishlistedItems((prev) => [...prev, item.scholarship_name]);
     } catch (error) {
       console.error("Failed to add to wishlist:", error);
@@ -82,7 +80,9 @@ const AnimatedCard = () => {
   return (
     <div className="bg-gray-100 p-6 min-h-screen flex flex-col">
       <h1 className="text-5xl text-black font-bold mb-6 text-center">
-        {respArr.length === 0 ? "No Scholarships Found!" : "Scholarships for you"}
+        {respArr.length === 0
+          ? "No Scholarships Found!"
+          : "Scholarships for you"}
       </h1>
 
       {error && (
@@ -118,7 +118,9 @@ const AnimatedCard = () => {
                 </div>
 
                 <div className="text-sm text-gray-600">📍 {item.location}</div>
-                <div className="text-sm text-gray-600">📅 Deadline: {item.deadline}</div>
+                <div className="text-sm text-gray-600">
+                  📅 Deadline: {item.deadline}
+                </div>
               </div>
 
               <a
