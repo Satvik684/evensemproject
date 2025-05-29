@@ -1,6 +1,8 @@
 // src/components/LoginModal.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useLogin } from '../hooks/useLogin';
+
 
 
 const LoginModal = () => {
@@ -10,11 +12,18 @@ const LoginModal = () => {
     navigate("/");
   }
 
+  const {login,error,isLoading} = useLogin();
+
   const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
   
     const handelSubmit = async (e) =>{
-      e.preventDefault;
+      e.preventDefault();
+
+      await login(email,password);
+
+
+
     }
 
   return (
@@ -39,6 +48,7 @@ const LoginModal = () => {
       <button
         type="submit"
         className="bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition duration-200"
+        disabled={isLoading}
       >
         Login
       </button>
@@ -49,6 +59,7 @@ const LoginModal = () => {
       >
         Cancel
       </button>
+      {error && <div className="error">{error}</div>}
     </form>
   </div>
 </div>
