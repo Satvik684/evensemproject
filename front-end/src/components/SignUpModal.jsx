@@ -1,26 +1,30 @@
 // src/components/LoginModal.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useSignup } from '../hooks/useSignup';
 
-
-const LoginModal = () => {
+const SignUpModal = () => {
   const navigate = useNavigate();
+
+  const {signup,error,isLoading} = useSignup();
 
   const handleClick = ()=>{
     navigate("/");
   }
 
   const [email,setEmail] = useState('');
-    const [password,setPassword] = useState('');
-  
-    const handelSubmit = async (e) =>{
-      e.preventDefault;
-    }
+  const [password,setPassword] = useState('');
+
+  const handelSubmit = async (e) =>{
+    e.preventDefault();
+
+    await signup(email,password);
+  }
 
   return (
    <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 text-black">
   <div className="bg-white p-8 rounded-lg w-full max-w-md shadow-lg">
-    <h2 className="text-black text-2xl font-bold mb-6 text-center">Login</h2>
+    <h2 className="text-black text-2xl font-bold mb-6 text-center">SignUp</h2>
     <form className="flex flex-col gap-4" onSubmit={handelSubmit}>
       <input
         type="email"
@@ -39,8 +43,9 @@ const LoginModal = () => {
       <button
         type="submit"
         className="bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition duration-200"
+        disabled={isLoading}
       >
-        Login
+        Signup
       </button>
       <button
         type="button"
@@ -49,6 +54,8 @@ const LoginModal = () => {
       >
         Cancel
       </button>
+      
+      {error && <div className='error'>{error}</div>}
     </form>
   </div>
 </div>
@@ -56,4 +63,4 @@ const LoginModal = () => {
   );
 };
 
-export default LoginModal;
+export default SignUpModal;

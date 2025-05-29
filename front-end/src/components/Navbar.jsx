@@ -1,10 +1,19 @@
 // src/components/Navbar.jsx
 import React, { useState } from 'react';
 import LoginModal from './LoginModal';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
+  
+  const navigate = useNavigate();
+
+  const handelClick1 = (event)=>{
+    navigate("/login");
+  }
+
+  const handelClick2 = ()=>{
+    navigate("/signup");
+  }
 
   return (
     <>
@@ -20,13 +29,16 @@ const Navbar = () => {
           <Link to={'/wishlist'}>
             <h2 className="text-xl hover:text-blue-400 cursor-pointer">Wishlist</h2>
           </Link>
-          <button onClick={() => setModalOpen(true)} className="text-xl hover:text-blue-400 cursor-pointer">
+          <button onClick={handelClick1} className="text-xl hover:text-blue-400 cursor-pointer">
             Login
+          </button>
+          <button onClick={handelClick2} className="text-xl hover:text-blue-400 cursor-pointer">
+            Signup
           </button>
         </div>
       </nav>
 
-      <LoginModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
+      
     </>
   );
 };

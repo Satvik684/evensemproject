@@ -7,6 +7,8 @@ import Scholarship from './components/Scholarship';
 import Footer from './components/Footer';
 import AnimatedCard from './components/AnimatedCard';
 import Wishlist from './components/Wishlist'; // ✅ Corrected import
+import LoginModal from './components/LoginModal';
+import SignUpModal from './components/SignUpModal';
 
 const App = () => {
   return (
@@ -28,11 +30,14 @@ const App = () => {
             <Route path="/results" element={<AnimatedCard />} />
             <Route path="/all-scholarship" element={<Scholarship />} />
             <Route path="/wishlist" element={<Wishlist />} /> {/* ✅ Wishlist route */}
+            <Route path="/login" element={<LoginModal/>}></Route>
+            <Route path="/signup" element={<SignUpModal/>}></Route>
           </Routes>
         </main>
 
         <Footer />
       </div>
+         
     </Router>
   );
 };
