@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import "./AnimatedCard.css";
 import { useInView } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const AnimatedCard = () => {
   const lastCardRef = useRef(null);
@@ -12,21 +13,31 @@ const AnimatedCard = () => {
 
   const [wishlistedItems, setWishlistedItems] = useState([]);
 
+  // 🔍 Fetch wishlist and mark already wishlisted items
   useEffect(() => {
-    const storedWishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-    const wishlistedNames = storedWishlist.map(item => item.scholarship_name);
-    setWishlistedItems(wishlistedNames);
-  }, [respArr]);
+    const fetchWishlist = async () => {
+      try {
+        const res = await axios.get("http://localhost:4000/api/user/wishlist");
+        const names = res.data.map(item => item.scholarship_name);
+        setWishlistedItems(names);
+      } catch (err) {
+        console.error("Failed to fetch wishlist:", err);
+      }
+    };
 
-  const handleAddToWishlist = (item) => {
-    const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-    const alreadyExists = wishlist.some(w => w.scholarship_name === item.scholarship_name);
+    fetchWishlist();
+  }, []);
 
-    if (!alreadyExists) {
-      wishlist.push(item);
-      localStorage.setItem("wishlist", JSON.stringify(wishlist));
-      // Update local state so button changes immediately without navigating
-      setWishlistedItems(prev => [...prev, item.scholarship_name]);
+  const handleAddToWishlist = async (item) => {
+    try {
+      await axios.post("http://localhost:4000/api/user/add-to-wishlist", item);
+      setWishlistedItems((prev) => [...prev, item.scholarship_name]);
+    } catch (error) {
+      if (error.response?.status === 409) {
+        setWishlistedItems((prev) => [...prev, item.scholarship_name]);
+      } else {
+        console.error("Failed to add to wishlist:", error);
+      }
     }
   };
 
@@ -111,3 +122,4 @@ const AnimatedCard = () => {
 };
 
 export default AnimatedCard;
+

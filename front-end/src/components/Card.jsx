@@ -1,13 +1,63 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
-const Card = ({ name, degree, photo, deadline, funding, course, location, link }) => {
+const Card = ({
+  name,
+  degree,
+  photo,
+  deadline,
+  funding,
+  course,
+  location,
+  link,
+  sentiment_score,
+  student_friendly_rating
+}) => {
   const [isWishlisted, setIsWishlisted] = useState(false);
   const navigate = useNavigate();
 
-  const handleAddToWishlist = () => {
-    setIsWishlisted(true);
-    // Backend integration to add wishlist item will come later
+  const item = {
+    scholarship_name: name,
+    eligible_degrees: degree,
+    image_url: photo,
+    deadline,
+    funding_type: funding,
+    eligible_courses: course,
+    location,
+    link,
+    sentiment_score,
+    student_friendly_rating
+  };
+
+  // 🔍 Check if item already in wishlist on mount
+  useEffect(() => {
+    const checkWishlist = async () => {
+      try {
+        const res = await axios.get('http://localhost:4000/api/user/wishlist');
+        const exists = res.data.some(
+          (scholarship) => scholarship.scholarship_name === item.scholarship_name
+        );
+        setIsWishlisted(exists);
+      } catch (error) {
+        console.error('Error checking wishlist:', error);
+      }
+    };
+
+    checkWishlist();
+  }, []);
+
+  const handleAddToWishlist = async () => {
+    try {
+      await axios.post('http://localhost:4000/api/user/add-to-wishlist', item);
+      setIsWishlisted(true);
+    } catch (error) {
+      if (error.response?.status === 409) {
+        setIsWishlisted(true); // Already exists
+      } else {
+        console.error('Failed to add to wishlist:', error);
+      }
+    }
   };
 
   const goToWishlist = () => {

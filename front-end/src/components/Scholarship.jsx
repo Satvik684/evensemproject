@@ -38,6 +38,8 @@ const ScholarshipCards = () => {
                   course={scholarship.eligible_courses}
                   location={scholarship.location}
                   link={scholarship.link}
+                  sentiment_score={scholarship.sentiment_score}
+                  student_friendly_rating={scholarship.student_friendly_rating}
                 />
               ))}
             </div>
