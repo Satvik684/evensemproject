@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="flex items-center justify-between px-10 py-5 bg-gray-800 text-white">
-        <h2 className="text-2xl font-bold">Aman</h2>
+        <h2 className="text-2xl font-bold">ScholarBuddy</h2>
         <div className="flex items-center gap-10">
           <Link to={'/all-scholarship'}>
             <h2 className="text-xl hover:text-blue-400 cursor-pointer">List</h2>

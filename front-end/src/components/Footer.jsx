@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* App Info */}
         <div>
-          <h2 className="text-xl font-bold text-white">Scholarship Finder</h2>
+          <h2 className="text-xl font-bold text-white">ScholarBuddy</h2>
           <p className="mt-2 text-sm text-gray-400">Helping students discover scholarships that change lives.</p>
         </div>
 
@@ -35,7 +35,7 @@ const Footer = () => {
 
       {/* Bottom Line */}
       <div className="mt-6 border-t border-gray-700 pt-4 text-center text-sm text-gray-500 w-full">
-    © {new Date().getFullYear()} Scholarship Finder. All rights reserved.
+    © {new Date().getFullYear()} ScholarBuddy. All rights reserved.
   </div>
     </footer>
   );
