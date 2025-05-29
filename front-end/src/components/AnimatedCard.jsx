@@ -9,7 +9,7 @@ const AnimatedCard = () => {
   const lastCardRef = useRef(null);
   const location = useLocation();
   const navigate = useNavigate();
-  const { user, loading } = useAuthContext(); // ✅ Include loading from context
+  const { user, loading } = useAuthContext();
 
   const respArr = location.state?.resultData || [];
   const isLastCardInView = useInView(lastCardRef, { threshold: 0.8 });
@@ -17,7 +17,6 @@ const AnimatedCard = () => {
   const [wishlistedItems, setWishlistedItems] = useState([]);
   const [error, setError] = useState(null);
 
-  // 🔍 Fetch wishlist after user is available
   useEffect(() => {
     const fetchWishlist = async () => {
       if (!user) {
@@ -77,12 +76,18 @@ const AnimatedCard = () => {
     navigate("/wishlist");
   };
 
+  const renderStars = (rating) => {
+    return [...Array(5)].map((_, i) => (
+      <span key={i} className={i < rating ? "text-yellow-400" : "text-gray-300"}>
+        ★
+      </span>
+    ));
+  };
+
   return (
     <div className="bg-gray-100 p-6 min-h-screen flex flex-col">
       <h1 className="text-5xl text-black font-bold mb-6 text-center">
-        {respArr.length === 0
-          ? "No Scholarships Found!"
-          : "Scholarships for you"}
+        {respArr.length === 0 ? "No Scholarships Found!" : "Scholarships for you"}
       </h1>
 
       {error && (
@@ -120,6 +125,9 @@ const AnimatedCard = () => {
                 <div className="text-sm text-gray-600">📍 {item.location}</div>
                 <div className="text-sm text-gray-600">
                   📅 Deadline: {item.deadline}
+                </div>
+                <div className="text-sm text-gray-600">
+                  🌟 Student Friendly: {renderStars(item.student_friendly_rating || 0)}
                 </div>
               </div>
 
