@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 const studentRoute = require("./routes/studentRoutes"); 
+const userRoute = require("./routes/userRoute");
 
 mongoose.connect(process.env.DBURL).then(()=>{
     console.log("database connected!");
@@ -20,6 +21,7 @@ mongoose.connect(process.env.DBURL).then(()=>{
 })
 
 app.use("/api/user",studentRoute);
+app.use("/api/auth",userRoute);
 
 
 
