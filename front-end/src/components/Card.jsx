@@ -1,39 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Card = ({ name, degree, photo, deadline, funding, course, location, link }) => {
   const [isWishlisted, setIsWishlisted] = useState(false);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-    const alreadyExists = wishlist.some(item => item.name === name);
-    if (alreadyExists) {
-      setIsWishlisted(true);
-    }
-  }, [name]);
-
   const handleAddToWishlist = () => {
-    const wishlistItem = {
-      name,
-      degree,
-      photo,
-      deadline,
-      funding,
-      course,
-      location,
-      link
-    };
-
-    let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-    const alreadyExists = wishlist.some(item => item.name === name);
-
-    if (!alreadyExists) {
-      wishlist.push(wishlistItem);
-      localStorage.setItem("wishlist", JSON.stringify(wishlist));
-    }
-
-    navigate('/wishlist');
+    setIsWishlisted(true);
+    // Backend integration to add wishlist item will come later
   };
 
   const goToWishlist = () => {

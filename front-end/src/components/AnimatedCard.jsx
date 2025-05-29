@@ -7,7 +7,7 @@ const AnimatedCard = () => {
   const lastCardRef = useRef(null);
   const location = useLocation();
   const navigate = useNavigate();
-  const respArr = location.state.resultData;
+  const respArr = location.state?.resultData || [];
   const isLastCardInView = useInView(lastCardRef, { threshold: 0.8 });
 
   const [wishlistedItems, setWishlistedItems] = useState([]);
@@ -25,9 +25,9 @@ const AnimatedCard = () => {
     if (!alreadyExists) {
       wishlist.push(item);
       localStorage.setItem("wishlist", JSON.stringify(wishlist));
+      // Update local state so button changes immediately without navigating
+      setWishlistedItems(prev => [...prev, item.scholarship_name]);
     }
-
-    navigate("/wishlist");
   };
 
   const goToWishlist = () => {
