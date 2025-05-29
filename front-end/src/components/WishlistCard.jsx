@@ -1,4 +1,3 @@
-// src/components/WishListCard.jsx
 import React from 'react';
 
 const WishListCard = ({
@@ -14,6 +13,19 @@ const WishListCard = ({
   student_friendly_rating,
   onDelete, // callback from parent
 }) => {
+  const renderStars = (rating) => {
+    return (
+      <div className="text-sm text-gray-600 mt-1">
+        🌟 Student Friendly:{" "}
+        {[...Array(5)].map((_, i) => (
+          <span key={i} className={i < rating ? "text-yellow-400" : "text-gray-300"}>
+            ★
+          </span>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <div className="bg-gray-200 rounded-lg shadow p-4 flex flex-col transform transition duration-300 hover:scale-105 hover:bg-gray-50">
       <div className="bg-white h-48 flex items-center justify-center rounded overflow-hidden">
@@ -23,6 +35,7 @@ const WishListCard = ({
           className="max-h-full max-w-full object-contain"
         />
       </div>
+
       <div className="mt-4 flex-grow">
         <h3 className="text-lg text-black font-semibold">{name}</h3>
         <p className="text-sm text-gray-600">🎓 Degree: {degree}</p>
@@ -30,6 +43,7 @@ const WishListCard = ({
         <p className="text-sm text-gray-600">📍 Location: {location}</p>
         <p className="text-sm text-gray-600">💰 Funding: {funding}</p>
         <p className="text-sm text-gray-600">🕒 Deadline: {deadline}</p>
+        {renderStars(student_friendly_rating || 0)}
       </div>
 
       <a
