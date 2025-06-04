@@ -15,6 +15,7 @@
 - 🔐 User authentication using JWT and bcrypt
 - ❤️ Wishlist feature to save favorite scholarships
 - 📂 REST API built with Node.js and Express
+- ★ Student friendly rating using sentiment analaysis
 
 ---
 
@@ -24,9 +25,10 @@
 |------------|-------------------------------------------|
 | Frontend   | React, Axios, React Router DOM, Tailwind  |
 | Backend    | Node.js, Express.js, MongoDB, Mongoose    |
-| Scraper    | Python, BeautifulSoup/Scrapy, PyMongo     |
-| Auth       | JWT, bcrypt, cookie-parser                |
-| Database   | MongoDB (local or Atlas)                  |
+|Matching Algo| Fuse.js    |
+| Scraper    | Python, Selenium, PyMongo     |
+| Auth       | JWT, bcrypt                |
+| Database   | MongoDB (local)                  |
 
 ---
 
@@ -35,21 +37,17 @@
 Clone the project and install dependencies for all parts:
 
 ```bash
-git clone https://github.com/yourusername/scholar-buddy.git
-cd scholar-buddy
+git clone https://github.com/Satvik684/evensemproject.git
+cd evensemproject
 ```
 ## 🔧 Backend Setup
 ```bash
-Copy
-Edit
 cd backend
 npm install
 ```
 ## Create a .env file in /backend with the following:
 
 ```env
-Copy
-Edit
 DBURL=your_mongodb_connection_string
 SECRET=your_jwt_secret
 PORT=4000
@@ -96,6 +94,9 @@ Run the code seperatley for each file
 ```bash
 python import.py
 ```
+
+## Usage
+After this the project should be ready to run on your computer . You can run the project on http://localhost:5173/ . If you face any issue please raise it in the issues section
 
     
 
