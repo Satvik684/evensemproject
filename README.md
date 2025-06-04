@@ -38,14 +38,14 @@ Clone the project and install dependencies for all parts:
 git clone https://github.com/yourusername/scholar-buddy.git
 cd scholar-buddy
 ```
-##🔧 Backend Setup
+## 🔧 Backend Setup
 ```bash
 Copy
 Edit
 cd backend
 npm install
 ```
-##Create a .env file in /backend with the following:
+## Create a .env file in /backend with the following:
 
 ```env
 Copy
@@ -54,21 +54,21 @@ DBURL=your_mongodb_connection_string
 SECRET=your_jwt_secret
 PORT=4000
 ```
-##Then, start the backend server:
+## Then, start the backend server:
 
 ```bash
 npm start
 ```
-##💻 Frontend Setup
+## 💻 Frontend Setup
 ```bash
 cd front-end
 npm install
 npm run dev
 ```
 
-##Database Setup
+## Database Setup
 ## For your convenience we have already added the scraped json file with student ratings . To save the files in your local MongoDB database do the following
-##in /Scraping run the follwing command to install pymongo
+## in /Scraping run the follwing command to install pymongo
 ```bash
 pip install pymongo
 ```
@@ -92,6 +92,10 @@ Make sure to name the db as given . Now add the 4 different files in the db with
 | 'scholarships_uk_rated'           | 'scrapeduks'               |
 | 'scholarships_usa_rated'   | 'scrapedusas'                   |
 
+Run the code seperatley for each file
+```bash
+python import.py
+```
 
     
 
