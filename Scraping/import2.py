@@ -3,13 +3,13 @@ import json
 
 try:
     # Load the JSON data
-    with open('scholarships_usa_rated.json', 'r', encoding='utf-8') as f:
+    with open('scholarships_uk_rated.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     # Connect to MongoDB
     client = MongoClient("mongodb://localhost:27017/")
     db = client['evensemprojdb']
-    collection_name = 'scrapedusas'
+    collection_name = 'scrapeduks'
 
     # Drop the collection if it exists (completely overwrite)
     if collection_name in db.list_collection_names():

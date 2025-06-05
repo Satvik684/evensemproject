@@ -162,7 +162,7 @@ const AnimatedCard = () => {
 
       {isLastCardInView && (
         <footer className="mt-10 text-center text-sm text-gray-500 animate-fade-in">
-          © 2025 Scholarship Portal. Built by Hirdesh.
+          © 2025 Scholarship Portal.
         </footer>
       )}
     </div>

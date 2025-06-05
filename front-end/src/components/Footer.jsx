@@ -29,7 +29,7 @@ const Footer = () => {
             <a href="#" className="hover:text-white text-xl"><FaLinkedin /></a>
             <a href="#" className="hover:text-white text-xl"><FaTwitter /></a>
           </div>
-          <p className="mt-4 text-sm text-gray-400">📩 contact Aman;) </p>
+          <p className="mt-4 text-sm text-gray-400">📩 contact  </p>
         </div>
       </div>
 
