@@ -97,6 +97,7 @@ python import.py
 
 ## Usage
 After this the project should be ready to run on your computer . You can run the project on http://localhost:5173/ . If you face any issue please raise it in the issues section
+Make sure to signup before accessing the features of the site.
 
     
 
